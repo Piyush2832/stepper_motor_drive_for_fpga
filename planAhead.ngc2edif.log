@@ -1,0 +1,26 @@
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design SPI_Slave.ngc ...
+WARNING:NetListWriters:298 - No output is written to SPI_Slave.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   Mcompar_GND_1_o_cnt[31]_LessThan_242_o_lut<4 : 0> on block SPI_Slave is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus Msub_GND_1_o_GND_1_o_sub_171_OUT_lut<15
+   : 4> on block SPI_Slave is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus Madd_n0721[16:0]_lut<5 : 3> on block
+   SPI_Slave is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus Msub_GND_1_o_GND_1_o_sub_217_OUT_lut<15
+   : 4> on block SPI_Slave is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   PWR_1_o_int_rpmy[23]_div_168/Madd_GND_2_o_b[23]_add_11_OUT_Madd_Madd_cy<19 :
+   17> on block SPI_Slave is not reconstructed, because there are some missing
+   bus signals.
+  finished :Prep
+Writing EDIF netlist file SPI_Slave.edif ...
+ngc2edif: Total memory usage is 4324348 kilobytes
+

@@ -1,0 +1,1214 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.25 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.25 secs
+ 
+--> Reading design: SPI_Slave.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "SPI_Slave.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "SPI_Slave"
+Output Format                      : NGC
+Target Device                      : xc6slx9-2-tqg144
+
+---- Source Options
+Top Module Name                    : SPI_Slave
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "D:\PIyuSH\4 - axis drive\spi_using_3_axis_test\spi_96_bit_test.v" into library work
+Parsing module <SPI_Slave>.
+INFO:HDLCompiler:693 - "D:\PIyuSH\4 - axis drive\spi_using_3_axis_test\spi_96_bit_test.v" Line 113. parameter declaration becomes local in SPI_Slave with formal parameter declaration list
+INFO:HDLCompiler:693 - "D:\PIyuSH\4 - axis drive\spi_using_3_axis_test\spi_96_bit_test.v" Line 114. parameter declaration becomes local in SPI_Slave with formal parameter declaration list
+INFO:HDLCompiler:693 - "D:\PIyuSH\4 - axis drive\spi_using_3_axis_test\spi_96_bit_test.v" Line 115. parameter declaration becomes local in SPI_Slave with formal parameter declaration list
+INFO:HDLCompiler:693 - "D:\PIyuSH\4 - axis drive\spi_using_3_axis_test\spi_96_bit_test.v" Line 116. parameter declaration becomes local in SPI_Slave with formal parameter declaration list
+INFO:HDLCompiler:693 - "D:\PIyuSH\4 - axis drive\spi_using_3_axis_test\spi_96_bit_test.v" Line 117. parameter declaration becomes local in SPI_Slave with formal parameter declaration list
+INFO:HDLCompiler:693 - "D:\PIyuSH\4 - axis drive\spi_using_3_axis_test\spi_96_bit_test.v" Line 118. parameter declaration becomes local in SPI_Slave with formal parameter declaration list
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <SPI_Slave>.
+WARNING:HDLCompiler:872 - "D:\PIyuSH\4 - axis drive\spi_using_3_axis_test\spi_96_bit_test.v" Line 124: Using initial value of r_Tx_Done since it is never assigned
+WARNING:HDLCompiler:872 - "D:\PIyuSH\4 - axis drive\spi_using_3_axis_test\spi_96_bit_test.v" Line 125: Using initial value of r_Tx_Active since it is never assigned
+WARNING:HDLCompiler:872 - "D:\PIyuSH\4 - axis drive\spi_using_3_axis_test\spi_96_bit_test.v" Line 167: Using initial value of pulse_rate since it is never assigned
+WARNING:HDLCompiler:1127 - "D:\PIyuSH\4 - axis drive\spi_using_3_axis_test\spi_96_bit_test.v" Line 192: Assignment to w_CPOL ignored, since the identifier is never used
+WARNING:HDLCompiler:413 - "D:\PIyuSH\4 - axis drive\spi_using_3_axis_test\spi_96_bit_test.v" Line 333: Result of 4-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "D:\PIyuSH\4 - axis drive\spi_using_3_axis_test\spi_96_bit_test.v" Line 408: Result of 32-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "D:\PIyuSH\4 - axis drive\spi_using_3_axis_test\spi_96_bit_test.v" Line 459: Result of 25-bit expression is truncated to fit in 24-bit target.
+WARNING:HDLCompiler:413 - "D:\PIyuSH\4 - axis drive\spi_using_3_axis_test\spi_96_bit_test.v" Line 464: Result of 32-bit expression is truncated to fit in 24-bit target.
+WARNING:HDLCompiler:413 - "D:\PIyuSH\4 - axis drive\spi_using_3_axis_test\spi_96_bit_test.v" Line 475: Result of 32-bit expression is truncated to fit in 24-bit target.
+WARNING:HDLCompiler:413 - "D:\PIyuSH\4 - axis drive\spi_using_3_axis_test\spi_96_bit_test.v" Line 550: Result of 25-bit expression is truncated to fit in 24-bit target.
+WARNING:HDLCompiler:413 - "D:\PIyuSH\4 - axis drive\spi_using_3_axis_test\spi_96_bit_test.v" Line 605: Result of 25-bit expression is truncated to fit in 24-bit target.
+WARNING:HDLCompiler:413 - "D:\PIyuSH\4 - axis drive\spi_using_3_axis_test\spi_96_bit_test.v" Line 610: Result of 32-bit expression is truncated to fit in 24-bit target.
+WARNING:HDLCompiler:413 - "D:\PIyuSH\4 - axis drive\spi_using_3_axis_test\spi_96_bit_test.v" Line 621: Result of 32-bit expression is truncated to fit in 24-bit target.
+WARNING:HDLCompiler:413 - "D:\PIyuSH\4 - axis drive\spi_using_3_axis_test\spi_96_bit_test.v" Line 678: Result of 25-bit expression is truncated to fit in 24-bit target.
+WARNING:HDLCompiler:413 - "D:\PIyuSH\4 - axis drive\spi_using_3_axis_test\spi_96_bit_test.v" Line 728: Result of 25-bit expression is truncated to fit in 24-bit target.
+WARNING:HDLCompiler:413 - "D:\PIyuSH\4 - axis drive\spi_using_3_axis_test\spi_96_bit_test.v" Line 733: Result of 32-bit expression is truncated to fit in 24-bit target.
+WARNING:HDLCompiler:413 - "D:\PIyuSH\4 - axis drive\spi_using_3_axis_test\spi_96_bit_test.v" Line 744: Result of 32-bit expression is truncated to fit in 24-bit target.
+WARNING:HDLCompiler:413 - "D:\PIyuSH\4 - axis drive\spi_using_3_axis_test\spi_96_bit_test.v" Line 805: Result of 25-bit expression is truncated to fit in 24-bit target.
+WARNING:HDLCompiler:413 - "D:\PIyuSH\4 - axis drive\spi_using_3_axis_test\spi_96_bit_test.v" Line 819: Result of 32-bit expression is truncated to fit in 24-bit target.
+WARNING:HDLCompiler:413 - "D:\PIyuSH\4 - axis drive\spi_using_3_axis_test\spi_96_bit_test.v" Line 823: Result of 25-bit expression is truncated to fit in 24-bit target.
+WARNING:HDLCompiler:1127 - "D:\PIyuSH\4 - axis drive\spi_using_3_axis_test\spi_96_bit_test.v" Line 873: Assignment to w_SPI_MISO_Mux ignored, since the identifier is never used
+WARNING:HDLCompiler:413 - "D:\PIyuSH\4 - axis drive\spi_using_3_axis_test\spi_96_bit_test.v" Line 880: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:1127 - "D:\PIyuSH\4 - axis drive\spi_using_3_axis_test\spi_96_bit_test.v" Line 884: Assignment to o_Tx_Active ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\PIyuSH\4 - axis drive\spi_using_3_axis_test\spi_96_bit_test.v" Line 885: Assignment to o_Tx_Done ignored, since the identifier is never used
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <SPI_Slave>.
+    Related source file is "D:\PIyuSH\4 - axis drive\spi_using_3_axis_test\spi_96_bit_test.v".
+        CLKS_PER_BIT = 104
+    Found 3-bit register for signal <r_TX_Bit_Count>.
+    Found 1-bit register for signal <flag>.
+    Found 1-bit register for signal <r2_RX_Done>.
+    Found 1-bit register for signal <r3_RX_Done>.
+    Found 1-bit register for signal <o_RX_DV>.
+    Found 1-bit register for signal <r_RX_Done>.
+    Found 4-bit register for signal <data_check>.
+    Found 8-bit register for signal <first8>.
+    Found 8-bit register for signal <second8>.
+    Found 8-bit register for signal <third8>.
+    Found 8-bit register for signal <fourth8>.
+    Found 8-bit register for signal <fifth8>.
+    Found 8-bit register for signal <sixth8>.
+    Found 8-bit register for signal <seventh8>.
+    Found 8-bit register for signal <eighth8>.
+    Found 8-bit register for signal <ninth8>.
+    Found 8-bit register for signal <tenth8>.
+    Found 8-bit register for signal <eleven8>.
+    Found 8-bit register for signal <twelve8>.
+    Found 8-bit register for signal <o_RX_Byte>.
+    Found 3-bit register for signal <r_RX_Bit_Count>.
+    Found 3-bit register for signal <old_r_TX_Bit_Count>.
+    Found 96-bit register for signal <data_out>.
+    Found 1-bit register for signal <stopp>.
+    Found 1-bit register for signal <stoppx>.
+    Found 8-bit register for signal <r_Temp_RX_Byte>.
+    Found 8-bit register for signal <r_RX_Byte>.
+    Found 1-bit register for signal <o_TX_sent>.
+    Found 24-bit register for signal <int_rpmx>.
+    Found 32-bit register for signal <cntx>.
+    Found 1-bit register for signal <stopx>.
+    Found 16-bit register for signal <distx>.
+    Found 16-bit register for signal <rpmx>.
+    Found 1-bit register for signal <pin1x>.
+    Found 1-bit register for signal <pin2x>.
+    Found 24-bit register for signal <counterx>.
+    Found 1-bit register for signal <togglex>.
+    Found 32-bit register for signal <dist2x>.
+    Found 32-bit register for signal <dist3x>.
+    Found 1-bit register for signal <pulses_x>.
+    Found 24-bit register for signal <int_rpmy>.
+    Found 32-bit register for signal <cnty>.
+    Found 1-bit register for signal <stopy>.
+    Found 1-bit register for signal <pulses_y>.
+    Found 16-bit register for signal <disty>.
+    Found 16-bit register for signal <rpmy>.
+    Found 1-bit register for signal <pin1y>.
+    Found 1-bit register for signal <pin2y>.
+    Found 24-bit register for signal <countery>.
+    Found 1-bit register for signal <toggley>.
+    Found 32-bit register for signal <dist2y>.
+    Found 32-bit register for signal <dist3y>.
+    Found 24-bit register for signal <int_rpm>.
+    Found 32-bit register for signal <cnt>.
+    Found 1-bit register for signal <stop>.
+    Found 1-bit register for signal <pulses>.
+    Found 1-bit register for signal <puls_in>.
+    Found 16-bit register for signal <dist>.
+    Found 16-bit register for signal <rpm>.
+    Found 1-bit register for signal <pin1>.
+    Found 1-bit register for signal <pin2>.
+    Found 24-bit register for signal <counter>.
+    Found 1-bit register for signal <toggle>.
+    Found 32-bit register for signal <dist2>.
+    Found 32-bit register for signal <dist3>.
+    Found 32-bit register for signal <cntr>.
+    Found 1-bit register for signal <gpio_pin>.
+    Found 23-bit register for signal <dist1y>.
+    Found 21-bit register for signal <storey>.
+    Found 23-bit register for signal <dist1x>.
+    Found 23-bit register for signal <dist1>.
+    Found finite state machine <FSM_0> for signal <data_check>.
+    -----------------------------------------------------------------------
+    | States             | 12                                             |
+    | Transitions        | 36                                             |
+    | Inputs             | 2                                              |
+    | Outputs            | 13                                             |
+    | Clock              | i_Clk (rising_edge)                            |
+    | Reset              | i_Rst_L (negative)                             |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 0000                                           |
+    | Power Up State     | 0000                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 17-bit subtractor for signal <GND_1_o_GND_1_o_sub_100_OUT> created at line 455.
+    Found 32-bit subtractor for signal <dist1x[31]_dist3x[31]_sub_107_OUT> created at line 462.
+    Found 17-bit subtractor for signal <GND_1_o_GND_1_o_sub_171_OUT> created at line 601.
+    Found 32-bit subtractor for signal <dist1y[31]_dist3y[31]_sub_178_OUT> created at line 608.
+    Found 17-bit subtractor for signal <GND_1_o_GND_1_o_sub_217_OUT> created at line 700.
+    Found 17-bit subtractor for signal <GND_1_o_GND_1_o_sub_243_OUT> created at line 722.
+    Found 32-bit subtractor for signal <dist1[31]_dist3[31]_sub_253_OUT> created at line 731.
+    Found 3-bit adder for signal <r_RX_Bit_Count[2]_GND_1_o_add_72_OUT> created at line 333.
+    Found 24-bit adder for signal <int_rpmx[23]_GND_1_o_add_104_OUT> created at line 459.
+    Found 17-bit adder for signal <n0711[16:0]> created at line 463.
+    Found 32-bit adder for signal <cntx[31]_GND_1_o_add_120_OUT> created at line 485.
+    Found 24-bit adder for signal <counterx[23]_GND_1_o_add_134_OUT> created at line 550.
+    Found 32-bit adder for signal <dist2x[31]_GND_1_o_add_144_OUT> created at line 584.
+    Found 24-bit adder for signal <int_rpmy[23]_GND_1_o_add_175_OUT> created at line 605.
+    Found 17-bit adder for signal <n0721[16:0]> created at line 609.
+    Found 32-bit adder for signal <cnty[31]_GND_1_o_add_191_OUT> created at line 631.
+    Found 24-bit adder for signal <countery[23]_GND_1_o_add_208_OUT> created at line 678.
+    Found 32-bit adder for signal <dist2y[31]_GND_1_o_add_215_OUT> created at line 698.
+    Found 24-bit adder for signal <int_rpm[23]_GND_1_o_add_249_OUT> created at line 728.
+    Found 17-bit adder for signal <n0731[16:0]> created at line 732.
+    Found 32-bit adder for signal <cnt[31]_GND_1_o_add_266_OUT> created at line 754.
+    Found 24-bit adder for signal <counter[23]_GND_1_o_add_280_OUT> created at line 805.
+    Found 32-bit adder for signal <dist2[31]_GND_1_o_add_297_OUT> created at line 840.
+    Found 32-bit adder for signal <cntr[31]_GND_1_o_add_326_OUT> created at line 862.
+    Found 3-bit subtractor for signal <GND_1_o_GND_1_o_sub_86_OUT<2:0>> created at line 408.
+    Found 24-bit subtractor for signal <GND_1_o_GND_1_o_sub_116_OUT<23:0>> created at line 475.
+    Found 24-bit subtractor for signal <GND_1_o_GND_1_o_sub_187_OUT<23:0>> created at line 621.
+    Found 24-bit subtractor for signal <GND_1_o_GND_1_o_sub_262_OUT<23:0>> created at line 744.
+    Found 7x16-bit multiplier for signal <PWR_1_o_distx[15]_MuLt_123_OUT> created at line 496.
+    Found 7x16-bit multiplier for signal <PWR_1_o_disty[15]_MuLt_198_OUT> created at line 643.
+    Found 7x16-bit multiplier for signal <PWR_1_o_dist[15]_MuLt_269_OUT> created at line 764.
+    Found 32-bit comparator greater for signal <GND_1_o_cntx[31]_LessThan_99_o> created at line 454
+    Found 32-bit comparator greater for signal <GND_1_o_GND_1_o_LessThan_101_o> created at line 455
+    Found 24-bit comparator greater for signal <GND_1_o_int_rpmx[23]_LessThan_104_o> created at line 456
+    Found 32-bit comparator greater for signal <dist2x[31]_dist1x[31]_LessThan_108_o> created at line 462
+    Found 24-bit comparator greater for signal <GND_1_o_int_rpmx[23]_LessThan_110_o> created at line 463
+    Found 16-bit comparator greater for signal <GND_1_o_rpmx[15]_LessThan_112_o> created at line 466
+    Found 32-bit comparator greater for signal <dist2x[31]_dist1x[31]_LessThan_115_o> created at line 473
+    Found 24-bit comparator greater for signal <GND_1_o_counterx[23]_LessThan_136_o> created at line 552
+    Found 32-bit comparator greater for signal <GND_1_o_dist2x[31]_LessThan_137_o> created at line 558
+    Found 32-bit comparator greater for signal <n0158> created at line 572
+    Found 32-bit comparator greater for signal <GND_1_o_cnty[31]_LessThan_170_o> created at line 600
+    Found 32-bit comparator greater for signal <GND_1_o_GND_1_o_LessThan_172_o> created at line 601
+    Found 24-bit comparator greater for signal <GND_1_o_int_rpmy[23]_LessThan_175_o> created at line 602
+    Found 32-bit comparator greater for signal <dist2y[31]_dist1y[31]_LessThan_179_o> created at line 608
+    Found 24-bit comparator greater for signal <GND_1_o_int_rpmy[23]_LessThan_181_o> created at line 609
+    Found 16-bit comparator greater for signal <GND_1_o_rpmy[15]_LessThan_183_o> created at line 612
+    Found 32-bit comparator lessequal for signal <dist2y[31]_dist1y[31]_LessThan_186_o> created at line 619
+    Found 24-bit comparator greater for signal <storey[23]_countery[23]_LessThan_210_o> created at line 680
+    Found 32-bit comparator greater for signal <GND_1_o_dist2y[31]_LessThan_211_o> created at line 686
+    Found 32-bit comparator greater for signal <n0253> created at line 700
+    Found 32-bit comparator greater for signal <GND_1_o_cnt[31]_LessThan_242_o> created at line 721
+    Found 32-bit comparator greater for signal <GND_1_o_GND_1_o_LessThan_244_o> created at line 722
+    Found 24-bit comparator greater for signal <int_rpm[23]_GND_1_o_LessThan_247_o> created at line 723
+    Found 16-bit comparator greater for signal <rpm[15]_GND_1_o_LessThan_248_o> created at line 723
+    Found 24-bit comparator greater for signal <GND_1_o_int_rpm[23]_LessThan_249_o> created at line 725
+    Found 32-bit comparator greater for signal <dist2[31]_dist1[31]_LessThan_254_o> created at line 731
+    Found 24-bit comparator greater for signal <GND_1_o_int_rpm[23]_LessThan_256_o> created at line 732
+    Found 16-bit comparator greater for signal <GND_1_o_rpm[15]_LessThan_258_o> created at line 735
+    Found 32-bit comparator greater for signal <dist2[31]_dist1[31]_LessThan_261_o> created at line 742
+    Found 24-bit comparator greater for signal <GND_1_o_counter[23]_LessThan_282_o> created at line 807
+    Found 32-bit comparator greater for signal <GND_1_o_dist2[31]_LessThan_283_o> created at line 813
+    Found 24-bit comparator greater for signal <GND_1_o_int_rpm[23]_LessThan_284_o> created at line 817
+    Found 24-bit comparator greater for signal <int_rpm[23]_GND_1_o_LessThan_287_o> created at line 821
+    Found 32-bit comparator greater for signal <n0341> created at line 828
+    Found 32-bit comparator greater for signal <cntr[31]_GND_1_o_LessThan_324_o> created at line 857
+    Found 32-bit comparator lessequal for signal <cntr[31]_GND_1_o_LessThan_326_o> created at line 860
+    Found 16-bit comparator equal for signal <rpm[15]_data_out[15]_equal_333_o> created at line 880
+    Found 16-bit comparator equal for signal <dist[15]_data_out[31]_equal_334_o> created at line 880
+    WARNING:Xst:2404 -  FFs/Latches <dist1y<31:23>> (without init value) have a constant value of 0 in block <SPI_Slave>.
+    WARNING:Xst:2404 -  FFs/Latches <storey<23:21>> (without init value) have a constant value of 0 in block <SPI_Slave>.
+    WARNING:Xst:2404 -  FFs/Latches <dist1x<31:23>> (without init value) have a constant value of 0 in block <SPI_Slave>.
+    WARNING:Xst:2404 -  FFs/Latches <dist1<31:23>> (without init value) have a constant value of 0 in block <SPI_Slave>.
+    Summary:
+	inferred   3 Multiplier(s).
+	inferred  28 Adder/Subtractor(s).
+	inferred 900 D-type flip-flop(s).
+	inferred  38 Comparator(s).
+	inferred  40 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <SPI_Slave> synthesized.
+
+Synthesizing Unit <div_21u_24u>.
+    Related source file is "".
+    Found 45-bit adder for signal <n1698> created at line 0.
+    Found 45-bit adder for signal <GND_2_o_b[23]_add_1_OUT> created at line 0.
+    Found 44-bit adder for signal <n1702> created at line 0.
+    Found 44-bit adder for signal <GND_2_o_b[23]_add_3_OUT> created at line 0.
+    Found 43-bit adder for signal <n1706> created at line 0.
+    Found 43-bit adder for signal <GND_2_o_b[23]_add_5_OUT> created at line 0.
+    Found 42-bit adder for signal <n1710> created at line 0.
+    Found 42-bit adder for signal <GND_2_o_b[23]_add_7_OUT> created at line 0.
+    Found 41-bit adder for signal <n1714> created at line 0.
+    Found 41-bit adder for signal <GND_2_o_b[23]_add_9_OUT> created at line 0.
+    Found 40-bit adder for signal <n1718> created at line 0.
+    Found 40-bit adder for signal <GND_2_o_b[23]_add_11_OUT> created at line 0.
+    Found 39-bit adder for signal <n1722> created at line 0.
+    Found 39-bit adder for signal <GND_2_o_b[23]_add_13_OUT> created at line 0.
+    Found 38-bit adder for signal <n1726> created at line 0.
+    Found 38-bit adder for signal <GND_2_o_b[23]_add_15_OUT> created at line 0.
+    Found 37-bit adder for signal <n1730> created at line 0.
+    Found 37-bit adder for signal <GND_2_o_b[23]_add_17_OUT> created at line 0.
+    Found 36-bit adder for signal <n1734> created at line 0.
+    Found 36-bit adder for signal <GND_2_o_b[23]_add_19_OUT> created at line 0.
+    Found 35-bit adder for signal <n1738> created at line 0.
+    Found 35-bit adder for signal <GND_2_o_b[23]_add_21_OUT> created at line 0.
+    Found 34-bit adder for signal <n1742> created at line 0.
+    Found 34-bit adder for signal <GND_2_o_b[23]_add_23_OUT> created at line 0.
+    Found 33-bit adder for signal <n1746> created at line 0.
+    Found 33-bit adder for signal <GND_2_o_b[23]_add_25_OUT> created at line 0.
+    Found 32-bit adder for signal <n1750> created at line 0.
+    Found 32-bit adder for signal <GND_2_o_b[23]_add_27_OUT> created at line 0.
+    Found 31-bit adder for signal <n1754> created at line 0.
+    Found 31-bit adder for signal <GND_2_o_b[23]_add_29_OUT> created at line 0.
+    Found 30-bit adder for signal <n1758> created at line 0.
+    Found 30-bit adder for signal <GND_2_o_b[23]_add_31_OUT> created at line 0.
+    Found 29-bit adder for signal <n1762> created at line 0.
+    Found 29-bit adder for signal <GND_2_o_b[23]_add_33_OUT> created at line 0.
+    Found 28-bit adder for signal <n1766> created at line 0.
+    Found 28-bit adder for signal <GND_2_o_b[23]_add_35_OUT> created at line 0.
+    Found 27-bit adder for signal <n1770> created at line 0.
+    Found 27-bit adder for signal <GND_2_o_b[23]_add_37_OUT> created at line 0.
+    Found 26-bit adder for signal <n1774> created at line 0.
+    Found 26-bit adder for signal <GND_2_o_b[23]_add_39_OUT> created at line 0.
+    Found 25-bit adder for signal <n1778> created at line 0.
+    Found 25-bit adder for signal <GND_2_o_b[23]_add_41_OUT> created at line 0.
+    Found 45-bit comparator lessequal for signal <BUS_0001> created at line 0
+    Found 44-bit comparator lessequal for signal <BUS_0002> created at line 0
+    Found 43-bit comparator lessequal for signal <BUS_0003> created at line 0
+    Found 42-bit comparator lessequal for signal <BUS_0004> created at line 0
+    Found 41-bit comparator lessequal for signal <BUS_0005> created at line 0
+    Found 40-bit comparator lessequal for signal <BUS_0006> created at line 0
+    Found 39-bit comparator lessequal for signal <BUS_0007> created at line 0
+    Found 38-bit comparator lessequal for signal <BUS_0008> created at line 0
+    Found 37-bit comparator lessequal for signal <BUS_0009> created at line 0
+    Found 36-bit comparator lessequal for signal <BUS_0010> created at line 0
+    Found 35-bit comparator lessequal for signal <BUS_0011> created at line 0
+    Found 34-bit comparator lessequal for signal <BUS_0012> created at line 0
+    Found 33-bit comparator lessequal for signal <BUS_0013> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0014> created at line 0
+    Found 31-bit comparator lessequal for signal <BUS_0015> created at line 0
+    Found 30-bit comparator lessequal for signal <BUS_0016> created at line 0
+    Found 29-bit comparator lessequal for signal <BUS_0017> created at line 0
+    Found 28-bit comparator lessequal for signal <BUS_0018> created at line 0
+    Found 27-bit comparator lessequal for signal <BUS_0019> created at line 0
+    Found 26-bit comparator lessequal for signal <BUS_0020> created at line 0
+    Found 25-bit comparator lessequal for signal <BUS_0021> created at line 0
+    Found 24-bit comparator lessequal for signal <BUS_0022> created at line 0
+    Summary:
+	inferred  42 Adder/Subtractor(s).
+	inferred  22 Comparator(s).
+	inferred 441 Multiplexer(s).
+Unit <div_21u_24u> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 3
+ 16x7-bit multiplier                                   : 3
+# Adders/Subtractors                                   : 154
+ 17-bit adder                                          : 3
+ 17-bit subtractor                                     : 4
+ 24-bit adder                                          : 6
+ 24-bit subtractor                                     : 3
+ 25-bit adder                                          : 6
+ 26-bit adder                                          : 6
+ 27-bit adder                                          : 6
+ 28-bit adder                                          : 6
+ 29-bit adder                                          : 6
+ 3-bit adder                                           : 1
+ 3-bit subtractor                                      : 1
+ 30-bit adder                                          : 6
+ 31-bit adder                                          : 6
+ 32-bit adder                                          : 13
+ 32-bit subtractor                                     : 3
+ 33-bit adder                                          : 6
+ 34-bit adder                                          : 6
+ 35-bit adder                                          : 6
+ 36-bit adder                                          : 6
+ 37-bit adder                                          : 6
+ 38-bit adder                                          : 6
+ 39-bit adder                                          : 6
+ 40-bit adder                                          : 6
+ 41-bit adder                                          : 6
+ 42-bit adder                                          : 6
+ 43-bit adder                                          : 6
+ 44-bit adder                                          : 6
+ 45-bit adder                                          : 6
+# Registers                                            : 70
+ 1-bit register                                        : 25
+ 16-bit register                                       : 6
+ 21-bit register                                       : 1
+ 23-bit register                                       : 3
+ 24-bit register                                       : 6
+ 3-bit register                                        : 3
+ 32-bit register                                       : 10
+ 8-bit register                                        : 15
+ 96-bit register                                       : 1
+# Comparators                                          : 104
+ 16-bit comparator equal                               : 2
+ 16-bit comparator greater                             : 4
+ 24-bit comparator greater                             : 12
+ 24-bit comparator lessequal                           : 3
+ 25-bit comparator lessequal                           : 3
+ 26-bit comparator lessequal                           : 3
+ 27-bit comparator lessequal                           : 3
+ 28-bit comparator lessequal                           : 3
+ 29-bit comparator lessequal                           : 3
+ 30-bit comparator lessequal                           : 3
+ 31-bit comparator lessequal                           : 3
+ 32-bit comparator greater                             : 18
+ 32-bit comparator lessequal                           : 5
+ 33-bit comparator lessequal                           : 3
+ 34-bit comparator lessequal                           : 3
+ 35-bit comparator lessequal                           : 3
+ 36-bit comparator lessequal                           : 3
+ 37-bit comparator lessequal                           : 3
+ 38-bit comparator lessequal                           : 3
+ 39-bit comparator lessequal                           : 3
+ 40-bit comparator lessequal                           : 3
+ 41-bit comparator lessequal                           : 3
+ 42-bit comparator lessequal                           : 3
+ 43-bit comparator lessequal                           : 3
+ 44-bit comparator lessequal                           : 3
+ 45-bit comparator lessequal                           : 3
+# Multiplexers                                         : 1363
+ 1-bit 2-to-1 multiplexer                              : 1329
+ 16-bit 2-to-1 multiplexer                             : 3
+ 24-bit 2-to-1 multiplexer                             : 31
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1293 - FF/Latch <dist_15> has a constant value of 0 in block <SPI_Slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <rpm_15> has a constant value of 0 in block <SPI_Slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <rpm_14> has a constant value of 0 in block <SPI_Slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <rpm_13> has a constant value of 0 in block <SPI_Slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <rpm_12> has a constant value of 0 in block <SPI_Slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <rpm_11> has a constant value of 0 in block <SPI_Slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <rpm_10> has a constant value of 0 in block <SPI_Slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <rpm_9> has a constant value of 0 in block <SPI_Slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <rpm_8> has a constant value of 0 in block <SPI_Slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <rpm_7> has a constant value of 0 in block <SPI_Slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <rpm_6> has a constant value of 0 in block <SPI_Slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <rpm_5> has a constant value of 0 in block <SPI_Slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <rpm_0> has a constant value of 0 in block <SPI_Slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <rpmx_15> has a constant value of 0 in block <SPI_Slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <rpmx_14> has a constant value of 0 in block <SPI_Slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <rpmx_13> has a constant value of 0 in block <SPI_Slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <rpmx_12> has a constant value of 0 in block <SPI_Slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <rpmx_11> has a constant value of 0 in block <SPI_Slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <rpmx_10> has a constant value of 0 in block <SPI_Slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <rpmx_9> has a constant value of 0 in block <SPI_Slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <rpmx_8> has a constant value of 0 in block <SPI_Slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <rpmx_7> has a constant value of 0 in block <SPI_Slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <rpmx_6> has a constant value of 0 in block <SPI_Slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <rpmx_5> has a constant value of 0 in block <SPI_Slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <rpmx_0> has a constant value of 0 in block <SPI_Slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <r_Temp_RX_Byte_7> of sequential type is unconnected in block <SPI_Slave>.
+
+Synthesizing (advanced) Unit <SPI_Slave>.
+The following registers are absorbed into counter <cntr>: 1 register on signal <cntr>.
+The following registers are absorbed into counter <cntx>: 1 register on signal <cntx>.
+The following registers are absorbed into counter <cnty>: 1 register on signal <cnty>.
+The following registers are absorbed into counter <cnt>: 1 register on signal <cnt>.
+The following registers are absorbed into counter <counterx>: 1 register on signal <counterx>.
+The following registers are absorbed into counter <dist2x>: 1 register on signal <dist2x>.
+The following registers are absorbed into counter <countery>: 1 register on signal <countery>.
+The following registers are absorbed into counter <dist2y>: 1 register on signal <dist2y>.
+The following registers are absorbed into counter <counter>: 1 register on signal <counter>.
+The following registers are absorbed into counter <dist2>: 1 register on signal <dist2>.
+The following registers are absorbed into counter <r_RX_Bit_Count>: 1 register on signal <r_RX_Bit_Count>.
+The following registers are absorbed into counter <r_TX_Bit_Count>: 1 register on signal <r_TX_Bit_Count>.
+Unit <SPI_Slave> synthesized (advanced).
+WARNING:Xst:2677 - Node <r_Temp_RX_Byte_7> of sequential type is unconnected in block <SPI_Slave>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 3
+ 16x7-bit multiplier                                   : 3
+# Adders/Subtractors                                   : 79
+ 17-bit adder                                          : 3
+ 17-bit subtractor                                     : 4
+ 21-bit adder carry in                                 : 63
+ 24-bit adder                                          : 3
+ 24-bit subtractor                                     : 3
+ 32-bit subtractor                                     : 3
+# Counters                                             : 12
+ 24-bit up counter                                     : 3
+ 3-bit down counter                                    : 1
+ 3-bit up counter                                      : 1
+ 32-bit up counter                                     : 7
+# Registers                                            : 597
+ Flip-Flops                                            : 597
+# Comparators                                          : 104
+ 16-bit comparator equal                               : 2
+ 16-bit comparator greater                             : 4
+ 24-bit comparator greater                             : 12
+ 24-bit comparator lessequal                           : 3
+ 25-bit comparator lessequal                           : 3
+ 26-bit comparator lessequal                           : 3
+ 27-bit comparator lessequal                           : 3
+ 28-bit comparator lessequal                           : 3
+ 29-bit comparator lessequal                           : 3
+ 30-bit comparator lessequal                           : 3
+ 31-bit comparator lessequal                           : 3
+ 32-bit comparator greater                             : 18
+ 32-bit comparator lessequal                           : 5
+ 33-bit comparator lessequal                           : 3
+ 34-bit comparator lessequal                           : 3
+ 35-bit comparator lessequal                           : 3
+ 36-bit comparator lessequal                           : 3
+ 37-bit comparator lessequal                           : 3
+ 38-bit comparator lessequal                           : 3
+ 39-bit comparator lessequal                           : 3
+ 40-bit comparator lessequal                           : 3
+ 41-bit comparator lessequal                           : 3
+ 42-bit comparator lessequal                           : 3
+ 43-bit comparator lessequal                           : 3
+ 44-bit comparator lessequal                           : 3
+ 45-bit comparator lessequal                           : 3
+# Multiplexers                                         : 1408
+ 1-bit 2-to-1 multiplexer                              : 1377
+ 24-bit 2-to-1 multiplexer                             : 31
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1293 - FF/Latch <dist_15> has a constant value of 0 in block <SPI_Slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <rpmx_15> has a constant value of 0 in block <SPI_Slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <rpmx_14> has a constant value of 0 in block <SPI_Slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <rpmx_13> has a constant value of 0 in block <SPI_Slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <rpmx_12> has a constant value of 0 in block <SPI_Slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <rpmx_11> has a constant value of 0 in block <SPI_Slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <rpmx_10> has a constant value of 0 in block <SPI_Slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <rpmx_9> has a constant value of 0 in block <SPI_Slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <rpmx_8> has a constant value of 0 in block <SPI_Slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <rpmx_7> has a constant value of 0 in block <SPI_Slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <rpmx_6> has a constant value of 0 in block <SPI_Slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <rpmx_5> has a constant value of 0 in block <SPI_Slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <rpmx_0> has a constant value of 0 in block <SPI_Slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <rpm_15> has a constant value of 0 in block <SPI_Slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <rpm_14> has a constant value of 0 in block <SPI_Slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <rpm_13> has a constant value of 0 in block <SPI_Slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <rpm_12> has a constant value of 0 in block <SPI_Slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <rpm_11> has a constant value of 0 in block <SPI_Slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <rpm_10> has a constant value of 0 in block <SPI_Slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <rpm_9> has a constant value of 0 in block <SPI_Slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <rpm_8> has a constant value of 0 in block <SPI_Slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <rpm_7> has a constant value of 0 in block <SPI_Slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <rpm_6> has a constant value of 0 in block <SPI_Slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <rpm_5> has a constant value of 0 in block <SPI_Slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <rpm_0> has a constant value of 0 in block <SPI_Slave>. This FF/Latch will be trimmed during the optimization process.
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <FSM_0> on signal <data_check[1:4]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 0000  | 0000
+ 0001  | 0001
+ 0010  | 0010
+ 0011  | 0011
+ 0100  | 0100
+ 0101  | 0101
+ 0110  | 0110
+ 0111  | 0111
+ 1000  | 1000
+ 1001  | 1001
+ 1010  | 1010
+ 1011  | 1011
+-------------------
+WARNING:Xst:1293 - FF/Latch <distx_15> has a constant value of 0 in block <SPI_Slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <disty_15> has a constant value of 0 in block <SPI_Slave>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <SPI_Slave> ...
+WARNING:Xst:1710 - FF/Latch <int_rpmx_0> (without init value) has a constant value of 0 in block <SPI_Slave>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <div_21u_24u> ...
+WARNING:Xst:1710 - FF/Latch <cntx_28> (without init value) has a constant value of 0 in block <SPI_Slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cntx_29> (without init value) has a constant value of 0 in block <SPI_Slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cntx_30> (without init value) has a constant value of 0 in block <SPI_Slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cntx_31> (without init value) has a constant value of 0 in block <SPI_Slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cnty_23> (without init value) has a constant value of 0 in block <SPI_Slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cnty_24> (without init value) has a constant value of 0 in block <SPI_Slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cnty_25> (without init value) has a constant value of 0 in block <SPI_Slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cnty_26> (without init value) has a constant value of 0 in block <SPI_Slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cnty_27> (without init value) has a constant value of 0 in block <SPI_Slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cnty_28> (without init value) has a constant value of 0 in block <SPI_Slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cnty_29> (without init value) has a constant value of 0 in block <SPI_Slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cnty_30> (without init value) has a constant value of 0 in block <SPI_Slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cnty_31> (without init value) has a constant value of 0 in block <SPI_Slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <counterx_22> has a constant value of 0 in block <SPI_Slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <counterx_23> has a constant value of 0 in block <SPI_Slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <counter_22> has a constant value of 0 in block <SPI_Slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <counter_23> has a constant value of 0 in block <SPI_Slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <countery_22> has a constant value of 0 in block <SPI_Slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <countery_23> has a constant value of 0 in block <SPI_Slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <dist2y_24> has a constant value of 0 in block <SPI_Slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <dist2y_25> has a constant value of 0 in block <SPI_Slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <dist2y_26> has a constant value of 0 in block <SPI_Slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <dist2y_27> has a constant value of 0 in block <SPI_Slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <dist2y_28> has a constant value of 0 in block <SPI_Slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <dist2y_29> has a constant value of 0 in block <SPI_Slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <dist2y_30> has a constant value of 0 in block <SPI_Slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <dist2y_31> has a constant value of 0 in block <SPI_Slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <dist3y_31> has a constant value of 0 in block <SPI_Slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <int_rpm_0> (without init value) has a constant value of 0 in block <SPI_Slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cntr_28> (without init value) has a constant value of 0 in block <SPI_Slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cntr_27> (without init value) has a constant value of 0 in block <SPI_Slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cntr_29> (without init value) has a constant value of 0 in block <SPI_Slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cntr_30> (without init value) has a constant value of 0 in block <SPI_Slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cntr_31> (without init value) has a constant value of 0 in block <SPI_Slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cnt_23> (without init value) has a constant value of 0 in block <SPI_Slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cnt_24> (without init value) has a constant value of 0 in block <SPI_Slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cnt_25> (without init value) has a constant value of 0 in block <SPI_Slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cntx_27> (without init value) has a constant value of 0 in block <SPI_Slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cntx_26> (without init value) has a constant value of 0 in block <SPI_Slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cntx_25> (without init value) has a constant value of 0 in block <SPI_Slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cntx_24> (without init value) has a constant value of 0 in block <SPI_Slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cntx_23> (without init value) has a constant value of 0 in block <SPI_Slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cnt_31> (without init value) has a constant value of 0 in block <SPI_Slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cnt_30> (without init value) has a constant value of 0 in block <SPI_Slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cnt_29> (without init value) has a constant value of 0 in block <SPI_Slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cnt_28> (without init value) has a constant value of 0 in block <SPI_Slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cnt_27> (without init value) has a constant value of 0 in block <SPI_Slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cnt_26> (without init value) has a constant value of 0 in block <SPI_Slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <dist3y_30> has a constant value of 0 in block <SPI_Slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <dist3y_29> has a constant value of 0 in block <SPI_Slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <dist3y_28> has a constant value of 0 in block <SPI_Slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <dist3y_27> has a constant value of 0 in block <SPI_Slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <dist3y_26> has a constant value of 0 in block <SPI_Slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <dist3y_25> has a constant value of 0 in block <SPI_Slave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <dist3y_24> has a constant value of 0 in block <SPI_Slave>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <rpm_1> in Unit <SPI_Slave> is equivalent to the following 3 FFs/Latches, which will be removed : <rpm_2> <rpm_3> <rpm_4> 
+INFO:Xst:2261 - The FF/Latch <cnt_0> in Unit <SPI_Slave> is equivalent to the following 2 FFs/Latches, which will be removed : <cntx_0> <cnty_0> 
+INFO:Xst:2261 - The FF/Latch <cnt_1> in Unit <SPI_Slave> is equivalent to the following 2 FFs/Latches, which will be removed : <cntx_1> <cnty_1> 
+INFO:Xst:2261 - The FF/Latch <cnt_2> in Unit <SPI_Slave> is equivalent to the following 2 FFs/Latches, which will be removed : <cntx_2> <cnty_2> 
+INFO:Xst:2261 - The FF/Latch <cnt_3> in Unit <SPI_Slave> is equivalent to the following 2 FFs/Latches, which will be removed : <cntx_3> <cnty_3> 
+INFO:Xst:2261 - The FF/Latch <cnt_4> in Unit <SPI_Slave> is equivalent to the following 2 FFs/Latches, which will be removed : <cntx_4> <cnty_4> 
+INFO:Xst:2261 - The FF/Latch <cnt_5> in Unit <SPI_Slave> is equivalent to the following 2 FFs/Latches, which will be removed : <cntx_5> <cnty_5> 
+INFO:Xst:2261 - The FF/Latch <cnt_6> in Unit <SPI_Slave> is equivalent to the following 2 FFs/Latches, which will be removed : <cntx_6> <cnty_6> 
+INFO:Xst:2261 - The FF/Latch <cnt_7> in Unit <SPI_Slave> is equivalent to the following 2 FFs/Latches, which will be removed : <cntx_7> <cnty_7> 
+INFO:Xst:2261 - The FF/Latch <cnt_8> in Unit <SPI_Slave> is equivalent to the following 2 FFs/Latches, which will be removed : <cntx_8> <cnty_8> 
+INFO:Xst:2261 - The FF/Latch <cnt_9> in Unit <SPI_Slave> is equivalent to the following 2 FFs/Latches, which will be removed : <cntx_9> <cnty_9> 
+INFO:Xst:2261 - The FF/Latch <cnt_10> in Unit <SPI_Slave> is equivalent to the following 2 FFs/Latches, which will be removed : <cntx_10> <cnty_10> 
+INFO:Xst:2261 - The FF/Latch <cnt_11> in Unit <SPI_Slave> is equivalent to the following 2 FFs/Latches, which will be removed : <cntx_11> <cnty_11> 
+INFO:Xst:2261 - The FF/Latch <cnt_12> in Unit <SPI_Slave> is equivalent to the following 2 FFs/Latches, which will be removed : <cntx_12> <cnty_12> 
+INFO:Xst:2261 - The FF/Latch <cnt_13> in Unit <SPI_Slave> is equivalent to the following 2 FFs/Latches, which will be removed : <cntx_13> <cnty_13> 
+INFO:Xst:2261 - The FF/Latch <cnt_14> in Unit <SPI_Slave> is equivalent to the following 2 FFs/Latches, which will be removed : <cntx_14> <cnty_14> 
+INFO:Xst:2261 - The FF/Latch <cnt_15> in Unit <SPI_Slave> is equivalent to the following 2 FFs/Latches, which will be removed : <cntx_15> <cnty_15> 
+INFO:Xst:2261 - The FF/Latch <cnt_20> in Unit <SPI_Slave> is equivalent to the following 2 FFs/Latches, which will be removed : <cntx_20> <cnty_20> 
+INFO:Xst:2261 - The FF/Latch <cnt_16> in Unit <SPI_Slave> is equivalent to the following 2 FFs/Latches, which will be removed : <cntx_16> <cnty_16> 
+INFO:Xst:2261 - The FF/Latch <cnt_21> in Unit <SPI_Slave> is equivalent to the following 2 FFs/Latches, which will be removed : <cntx_21> <cnty_21> 
+INFO:Xst:2261 - The FF/Latch <cnt_17> in Unit <SPI_Slave> is equivalent to the following 2 FFs/Latches, which will be removed : <cntx_17> <cnty_17> 
+INFO:Xst:2261 - The FF/Latch <cnt_22> in Unit <SPI_Slave> is equivalent to the following 2 FFs/Latches, which will be removed : <cntx_22> <cnty_22> 
+INFO:Xst:2261 - The FF/Latch <cnt_18> in Unit <SPI_Slave> is equivalent to the following 2 FFs/Latches, which will be removed : <cntx_18> <cnty_18> 
+INFO:Xst:2261 - The FF/Latch <cnt_19> in Unit <SPI_Slave> is equivalent to the following 2 FFs/Latches, which will be removed : <cntx_19> <cnty_19> 
+INFO:Xst:2261 - The FF/Latch <rpmx_1> in Unit <SPI_Slave> is equivalent to the following 3 FFs/Latches, which will be removed : <rpmx_2> <rpmx_3> <rpmx_4> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block SPI_Slave, actual ratio is 67.
+FlipFlop int_rpm_12 has been replicated 1 time(s)
+FlipFlop int_rpm_3 has been replicated 1 time(s)
+FlipFlop int_rpm_6 has been replicated 1 time(s)
+FlipFlop int_rpm_7 has been replicated 1 time(s)
+FlipFlop int_rpmx_1 has been replicated 2 time(s)
+FlipFlop int_rpmx_10 has been replicated 2 time(s)
+FlipFlop int_rpmx_11 has been replicated 1 time(s)
+FlipFlop int_rpmx_12 has been replicated 1 time(s)
+FlipFlop int_rpmx_13 has been replicated 2 time(s)
+FlipFlop int_rpmx_14 has been replicated 2 time(s)
+FlipFlop int_rpmx_15 has been replicated 2 time(s)
+FlipFlop int_rpmx_16 has been replicated 1 time(s)
+FlipFlop int_rpmx_17 has been replicated 1 time(s)
+FlipFlop int_rpmx_18 has been replicated 1 time(s)
+FlipFlop int_rpmx_19 has been replicated 1 time(s)
+FlipFlop int_rpmx_2 has been replicated 2 time(s)
+FlipFlop int_rpmx_20 has been replicated 1 time(s)
+FlipFlop int_rpmx_21 has been replicated 1 time(s)
+FlipFlop int_rpmx_22 has been replicated 1 time(s)
+FlipFlop int_rpmx_23 has been replicated 1 time(s)
+FlipFlop int_rpmx_3 has been replicated 2 time(s)
+FlipFlop int_rpmx_4 has been replicated 2 time(s)
+FlipFlop int_rpmx_5 has been replicated 2 time(s)
+FlipFlop int_rpmx_6 has been replicated 2 time(s)
+FlipFlop int_rpmx_7 has been replicated 2 time(s)
+FlipFlop int_rpmx_8 has been replicated 2 time(s)
+FlipFlop int_rpmx_9 has been replicated 2 time(s)
+FlipFlop int_rpmy_0 has been replicated 2 time(s)
+FlipFlop int_rpmy_1 has been replicated 2 time(s)
+FlipFlop int_rpmy_10 has been replicated 1 time(s)
+FlipFlop int_rpmy_11 has been replicated 1 time(s)
+FlipFlop int_rpmy_12 has been replicated 1 time(s)
+FlipFlop int_rpmy_13 has been replicated 1 time(s)
+FlipFlop int_rpmy_14 has been replicated 1 time(s)
+FlipFlop int_rpmy_15 has been replicated 1 time(s)
+FlipFlop int_rpmy_16 has been replicated 1 time(s)
+FlipFlop int_rpmy_17 has been replicated 1 time(s)
+FlipFlop int_rpmy_18 has been replicated 1 time(s)
+FlipFlop int_rpmy_19 has been replicated 1 time(s)
+FlipFlop int_rpmy_2 has been replicated 2 time(s)
+FlipFlop int_rpmy_20 has been replicated 1 time(s)
+FlipFlop int_rpmy_21 has been replicated 1 time(s)
+FlipFlop int_rpmy_22 has been replicated 1 time(s)
+FlipFlop int_rpmy_23 has been replicated 1 time(s)
+FlipFlop int_rpmy_3 has been replicated 1 time(s)
+FlipFlop int_rpmy_4 has been replicated 1 time(s)
+FlipFlop int_rpmy_5 has been replicated 1 time(s)
+FlipFlop int_rpmy_6 has been replicated 1 time(s)
+FlipFlop int_rpmy_7 has been replicated 2 time(s)
+FlipFlop int_rpmy_8 has been replicated 1 time(s)
+FlipFlop int_rpmy_9 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 836
+ Flip-Flops                                            : 836
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : SPI_Slave.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 6291
+#      GND                         : 1
+#      INV                         : 231
+#      LUT1                        : 343
+#      LUT2                        : 111
+#      LUT3                        : 313
+#      LUT4                        : 1003
+#      LUT5                        : 712
+#      LUT6                        : 772
+#      MUXCY                       : 1782
+#      VCC                         : 1
+#      XORCY                       : 1022
+# FlipFlops/Latches                : 836
+#      FD                          : 270
+#      FDC                         : 13
+#      FDCE                        : 202
+#      FDE                         : 137
+#      FDP                         : 3
+#      FDR                         : 53
+#      FDRE                        : 144
+#      FDSE                        : 14
+# Clock Buffers                    : 2
+#      BUFGP                       : 2
+# IO Buffers                       : 40
+#      IBUF                        : 10
+#      OBUF                        : 30
+# DSPs                             : 3
+#      DSP48A1                     : 3
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9tqg144-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             836  out of  11440     7%  
+ Number of Slice LUTs:                 3485  out of   5720    60%  
+    Number used as Logic:              3485  out of   5720    60%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   3932
+   Number with an unused Flip Flop:    3096  out of   3932    78%  
+   Number with an unused LUT:           447  out of   3932    11%  
+   Number of fully used LUT-FF pairs:   389  out of   3932     9%  
+   Number of unique control sets:        40
+
+IO Utilization: 
+ Number of IOs:                          43
+ Number of bonded IOBs:                  42  out of    102    41%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                2  out of     16    12%  
+ Number of DSP48A1s:                      3  out of     16    18%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+i_Clk                              | BUFGP                  | 817   |
+i_SPI_Clk                          | BUFGP                  | 22    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 74.022ns (Maximum Frequency: 13.510MHz)
+   Minimum input arrival time before clock: 8.715ns
+   Maximum output required time after clock: 7.323ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'i_Clk'
+  Clock period: 74.022ns (frequency: 13.510MHz)
+  Total number of paths / destination ports: 547992745241728790000000000000 / 1443
+-------------------------------------------------------------------------
+Delay:               74.022ns (Levels of Logic = 175)
+  Source:            int_rpm_11 (FF)
+  Destination:       int_rpm_1 (FF)
+  Source Clock:      i_Clk rising
+  Destination Clock: i_Clk rising
+
+  Data Path: int_rpm_11 to int_rpm_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             50   0.525   2.097  int_rpm_11 (int_rpm_11)
+     LUT5:I1->O            1   0.254   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<19>_lut<2> (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<19>_lut<2>)
+     MUXCY:S->O            1   0.215   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<19>_cy<2> (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<19>_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<19>_cy<3> (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<19>_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<19>_cy<4> (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<19>_cy<4>)
+     MUXCY:CI->O           4   0.023   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<19>_cy<5> (PWR_1_o_int_rpm[23]_div_240_OUT<19>)
+     MUXCY:CI->O           2   0.235   0.834  PWR_1_o_int_rpm[23]_div_240/Mmux_a[20]_GND_2_o_MUX_370_o11_cy (PWR_1_o_int_rpm[23]_div_240/a[20]_GND_2_o_MUX_370_o)
+     LUT5:I3->O            1   0.250   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<18>_lut<1> (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<18>_lut<1>)
+     MUXCY:S->O            1   0.215   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<18>_cy<1> (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<18>_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<18>_cy<2> (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<18>_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<18>_cy<3> (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<18>_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<18>_cy<4> (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<18>_cy<4>)
+     MUXCY:CI->O           8   0.023   0.944  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<18>_cy<5> (PWR_1_o_int_rpm[23]_div_240_OUT<18>)
+     LUT4:I3->O            2   0.254   1.002  PWR_1_o_int_rpm[23]_div_240/Mmux_a[20]_GND_2_o_MUX_454_o11 (PWR_1_o_int_rpm[23]_div_240/a[20]_GND_2_o_MUX_454_o)
+     LUT5:I1->O            1   0.254   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<17>_lut<1> (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<17>_lut<1>)
+     MUXCY:S->O            1   0.215   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<17>_cy<1> (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<17>_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<17>_cy<2> (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<17>_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<17>_cy<3> (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<17>_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<17>_cy<4> (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<17>_cy<4>)
+     MUXCY:CI->O          12   0.023   1.069  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<17>_cy<5> (PWR_1_o_int_rpm[23]_div_240_OUT<17>)
+     LUT4:I3->O            3   0.254   1.042  PWR_1_o_int_rpm[23]_div_240/Mmux_a[19]_GND_2_o_MUX_537_o11 (PWR_1_o_int_rpm[23]_div_240/a[19]_GND_2_o_MUX_537_o)
+     LUT4:I0->O            0   0.254   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<16>_lutdi1 (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<16>_lutdi1)
+     MUXCY:DI->O           1   0.181   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<16>_cy<1> (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<16>_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<16>_cy<2> (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<16>_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<16>_cy<3> (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<16>_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<16>_cy<4> (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<16>_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<16>_cy<5> (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<16>_cy<5>)
+     MUXCY:CI->O          15   0.023   1.155  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<16>_cy<6> (PWR_1_o_int_rpm[23]_div_240_OUT<16>)
+     LUT4:I3->O            5   0.254   1.271  PWR_1_o_int_rpm[23]_div_240/Mmux_a[20]_GND_2_o_MUX_616_o11 (PWR_1_o_int_rpm[23]_div_240/a[20]_GND_2_o_MUX_616_o)
+     LUT5:I0->O            0   0.254   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<15>_lutdi2 (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<15>_lutdi2)
+     MUXCY:DI->O           1   0.181   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<15>_cy<2> (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<15>_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<15>_cy<3> (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<15>_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<15>_cy<4> (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<15>_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<15>_cy<5> (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<15>_cy<5>)
+     MUXCY:CI->O          21   0.023   1.310  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<15>_cy<6> (PWR_1_o_int_rpm[23]_div_240_OUT<15>)
+     LUT4:I3->O            4   0.254   1.080  PWR_1_o_int_rpm[23]_div_240/Mmux_a[17]_GND_2_o_MUX_697_o11 (PWR_1_o_int_rpm[23]_div_240/a[17]_GND_2_o_MUX_697_o)
+     LUT4:I0->O            0   0.254   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<14>_lutdi1 (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<14>_lutdi1)
+     MUXCY:DI->O           1   0.181   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<14>_cy<1> (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<14>_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<14>_cy<2> (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<14>_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<14>_cy<3> (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<14>_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<14>_cy<4> (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<14>_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<14>_cy<5> (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<14>_cy<5>)
+     MUXCY:CI->O          26   0.023   1.420  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<14>_cy<6> (PWR_1_o_int_rpm[23]_div_240_OUT<14>)
+     LUT5:I4->O            5   0.254   1.271  PWR_1_o_int_rpm[23]_div_240/Mmux_a[20]_GND_2_o_MUX_770_o11 (PWR_1_o_int_rpm[23]_div_240/a[20]_GND_2_o_MUX_770_o)
+     LUT5:I0->O            0   0.254   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<13>_lutdi3 (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<13>_lutdi3)
+     MUXCY:DI->O           1   0.181   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<13>_cy<3> (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<13>_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<13>_cy<4> (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<13>_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<13>_cy<5> (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<13>_cy<5>)
+     MUXCY:CI->O          26   0.023   1.420  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<13>_cy<6> (PWR_1_o_int_rpm[23]_div_240_OUT<13>)
+     LUT5:I4->O            5   0.254   1.117  PWR_1_o_int_rpm[23]_div_240/Mmux_a[17]_GND_2_o_MUX_847_o11 (PWR_1_o_int_rpm[23]_div_240/a[17]_GND_2_o_MUX_847_o)
+     LUT4:I0->O            0   0.254   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<12>_lutdi2 (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<12>_lutdi2)
+     MUXCY:DI->O           1   0.181   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<12>_cy<2> (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<12>_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<12>_cy<3> (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<12>_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<12>_cy<4> (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<12>_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<12>_cy<5> (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<12>_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<12>_cy<6> (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<12>_cy<6>)
+     MUXCY:CI->O          33   0.023   1.537  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<12>_cy<7> (PWR_1_o_int_rpm[23]_div_240_OUT<12>)
+     LUT5:I4->O            5   0.254   1.271  PWR_1_o_int_rpm[23]_div_240/Mmux_a[20]_GND_2_o_MUX_916_o11 (PWR_1_o_int_rpm[23]_div_240/a[20]_GND_2_o_MUX_916_o)
+     LUT5:I0->O            0   0.254   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<11>_lutdi4 (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<11>_lutdi4)
+     MUXCY:DI->O           1   0.181   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<11>_cy<4> (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<11>_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<11>_cy<5> (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<11>_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<11>_cy<6> (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<11>_cy<6>)
+     MUXCY:CI->O          32   0.023   1.520  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<11>_cy<7> (PWR_1_o_int_rpm[23]_div_240_OUT<11>)
+     LUT5:I4->O            5   0.254   1.117  PWR_1_o_int_rpm[23]_div_240/Mmux_a[15]_GND_2_o_MUX_991_o11 (PWR_1_o_int_rpm[23]_div_240/a[15]_GND_2_o_MUX_991_o)
+     LUT4:I0->O            0   0.254   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<10>_lutdi2 (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<10>_lutdi2)
+     MUXCY:DI->O           1   0.181   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<10>_cy<2> (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<10>_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<10>_cy<3> (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<10>_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<10>_cy<4> (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<10>_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<10>_cy<5> (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<10>_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<10>_cy<6> (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<10>_cy<6>)
+     MUXCY:CI->O          42   0.023   1.687  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<10>_cy<7> (PWR_1_o_int_rpm[23]_div_240_OUT<10>)
+     LUT5:I4->O            5   0.254   1.271  PWR_1_o_int_rpm[23]_div_240/Mmux_a[20]_GND_2_o_MUX_1054_o11 (PWR_1_o_int_rpm[23]_div_240/a[20]_GND_2_o_MUX_1054_o)
+     LUT5:I0->O            0   0.254   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<9>_lutdi5 (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<9>_lutdi5)
+     MUXCY:DI->O           1   0.181   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<9>_cy<5> (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<9>_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<9>_cy<6> (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<9>_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<9>_cy<7> (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<9>_cy<7>)
+     MUXCY:CI->O          38   0.023   1.620  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<9>_cy<8> (PWR_1_o_int_rpm[23]_div_240_OUT<9>)
+     LUT5:I4->O            5   0.254   1.117  PWR_1_o_int_rpm[23]_div_240/Mmux_a[13]_GND_2_o_MUX_1127_o11 (PWR_1_o_int_rpm[23]_div_240/a[13]_GND_2_o_MUX_1127_o)
+     LUT4:I0->O            0   0.254   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<8>_lutdi2 (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<8>_lutdi2)
+     MUXCY:DI->O           1   0.181   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<8>_cy<2> (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<8>_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<8>_cy<3> (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<8>_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<8>_cy<4> (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<8>_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<8>_cy<5> (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<8>_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<8>_cy<6> (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<8>_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<8>_cy<7> (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<8>_cy<7>)
+     MUXCY:CI->O          49   0.023   1.804  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<8>_cy<8> (PWR_1_o_int_rpm[23]_div_240_OUT<8>)
+     LUT5:I4->O            5   0.254   1.271  PWR_1_o_int_rpm[23]_div_240/Mmux_a[20]_GND_2_o_MUX_1184_o11 (PWR_1_o_int_rpm[23]_div_240/a[20]_GND_2_o_MUX_1184_o)
+     LUT5:I0->O            0   0.254   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<7>_lutdi6 (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<7>_lutdi6)
+     MUXCY:DI->O           1   0.181   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<7>_cy<6> (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<7>_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<7>_cy<7> (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<7>_cy<7>)
+     MUXCY:CI->O          44   0.023   1.721  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<7>_cy<8> (PWR_1_o_int_rpm[23]_div_240_OUT<7>)
+     LUT5:I4->O            5   0.254   1.117  PWR_1_o_int_rpm[23]_div_240/Mmux_a[11]_GND_2_o_MUX_1255_o11 (PWR_1_o_int_rpm[23]_div_240/a[11]_GND_2_o_MUX_1255_o)
+     LUT4:I0->O            0   0.254   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<6>_lutdi2 (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<6>_lutdi2)
+     MUXCY:DI->O           1   0.181   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<6>_cy<2> (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<6>_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<6>_cy<3> (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<6>_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<6>_cy<4> (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<6>_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<6>_cy<5> (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<6>_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<6>_cy<6> (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<6>_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<6>_cy<7> (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<6>_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<6>_cy<8> (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<6>_cy<8>)
+     MUXCY:CI->O          58   0.023   1.883  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<6>_cy<9> (PWR_1_o_int_rpm[23]_div_240_OUT<6>)
+     LUT5:I4->O            5   0.254   1.271  PWR_1_o_int_rpm[23]_div_240/Mmux_a[20]_GND_2_o_MUX_1306_o11 (PWR_1_o_int_rpm[23]_div_240/a[20]_GND_2_o_MUX_1306_o)
+     LUT5:I0->O            0   0.254   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<5>_lutdi7 (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<5>_lutdi7)
+     MUXCY:DI->O           1   0.181   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<5>_cy<7> (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<5>_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<5>_cy<8> (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<5>_cy<8>)
+     MUXCY:CI->O          50   0.023   1.821  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<5>_cy<9> (PWR_1_o_int_rpm[23]_div_240_OUT<5>)
+     LUT5:I4->O            5   0.254   1.117  PWR_1_o_int_rpm[23]_div_240/Mmux_a[9]_GND_2_o_MUX_1375_o11 (PWR_1_o_int_rpm[23]_div_240/a[9]_GND_2_o_MUX_1375_o)
+     LUT4:I0->O            0   0.254   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<4>_lutdi2 (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<4>_lutdi2)
+     MUXCY:DI->O           1   0.181   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<4>_cy<2> (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<4>_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<4>_cy<3> (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<4>_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<4>_cy<4> (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<4>_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<4>_cy<5> (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<4>_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<4>_cy<6> (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<4>_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<4>_cy<7> (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<4>_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<4>_cy<8> (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<4>_cy<8>)
+     MUXCY:CI->O          67   0.023   1.953  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<4>_cy<9> (PWR_1_o_int_rpm[23]_div_240_OUT<4>)
+     LUT4:I3->O            4   0.254   1.080  PWR_1_o_int_rpm[23]_div_240/Mmux_a[6]_GND_2_o_MUX_1434_o11 (PWR_1_o_int_rpm[23]_div_240/a[6]_GND_2_o_MUX_1434_o)
+     LUT4:I0->O            0   0.254   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<3>_lutdi1 (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<3>_lutdi1)
+     MUXCY:DI->O           1   0.181   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<3>_cy<1> (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<3>_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<3>_cy<2> (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<3>_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<3>_cy<3> (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<3>_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<3>_cy<4> (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<3>_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<3>_cy<5> (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<3>_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<3>_cy<6> (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<3>_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<3>_cy<7> (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<3>_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<3>_cy<8> (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<3>_cy<8>)
+     MUXCY:CI->O          69   0.023   1.968  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<3>_cy<9> (PWR_1_o_int_rpm[23]_div_240_OUT<3>)
+     LUT4:I3->O            3   0.254   1.042  PWR_1_o_int_rpm[23]_div_240/Mmux_a[5]_GND_2_o_MUX_1489_o11 (PWR_1_o_int_rpm[23]_div_240/a[5]_GND_2_o_MUX_1489_o)
+     LUT4:I0->O            0   0.254   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<2>_lutdi1 (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<2>_lutdi1)
+     MUXCY:DI->O           1   0.181   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<2>_cy<1> (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<2>_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<2>_cy<2> (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<2>_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<2>_cy<3> (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<2>_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<2>_cy<4> (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<2>_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<2>_cy<5> (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<2>_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<2>_cy<6> (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<2>_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<2>_cy<7> (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<2>_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<2>_cy<8> (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<2>_cy<8>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<2>_cy<9> (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<2>_cy<9>)
+     MUXCY:CI->O          56   0.023   1.868  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<2>_cy<10> (PWR_1_o_int_rpm[23]_div_240_OUT<2>)
+     LUT4:I3->O            2   0.254   1.002  PWR_1_o_int_rpm[23]_div_240/Mmux_a[4]_GND_2_o_MUX_1542_o11 (PWR_1_o_int_rpm[23]_div_240/a[4]_GND_2_o_MUX_1542_o)
+     LUT4:I0->O            0   0.254   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<1>_lutdi1 (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<1>_lutdi1)
+     MUXCY:DI->O           1   0.181   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<1>_cy<1> (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<1>_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<1>_cy<2> (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<1>_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<1>_cy<3> (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<1>_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<1>_cy<4> (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<1>_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<1>_cy<5> (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<1>_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<1>_cy<6> (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<1>_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<1>_cy<7> (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<1>_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<1>_cy<8> (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<1>_cy<8>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<1>_cy<9> (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<1>_cy<9>)
+     MUXCY:CI->O          21   0.023   1.310  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<1>_cy<10> (PWR_1_o_int_rpm[23]_div_240_OUT<1>)
+     LUT4:I3->O            2   0.254   1.002  PWR_1_o_int_rpm[23]_div_240/Mmux_a[3]_GND_2_o_MUX_1593_o11 (PWR_1_o_int_rpm[23]_div_240/a[3]_GND_2_o_MUX_1593_o)
+     LUT4:I0->O            0   0.254   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<0>_lutdi1 (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<0>_lutdi1)
+     MUXCY:DI->O           1   0.181   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<0>_cy<1> (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<0>_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<0>_cy<2> (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<0>_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<0>_cy<3> (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<0>_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<0>_cy<4> (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<0>_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<0>_cy<5> (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<0>_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<0>_cy<6> (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<0>_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<0>_cy<7> (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<0>_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<0>_cy<8> (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<0>_cy<8>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<0>_cy<9> (PWR_1_o_int_rpm[23]_div_240/Mcompar_o<0>_cy<9>)
+     MUXCY:CI->O           2   0.235   0.954  PWR_1_o_int_rpm[23]_div_240/Mcompar_o<0>_cy<10> (PWR_1_o_int_rpm[23]_div_240_OUT<0>)
+     LUT4:I1->O            1   0.235   0.000  Mcompar_GND_1_o_counter[23]_LessThan_282_o_lut<0> (Mcompar_GND_1_o_counter[23]_LessThan_282_o_lut<0>)
+     MUXCY:S->O            1   0.215   0.000  Mcompar_GND_1_o_counter[23]_LessThan_282_o_cy<0> (Mcompar_GND_1_o_counter[23]_LessThan_282_o_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_GND_1_o_counter[23]_LessThan_282_o_cy<1> (Mcompar_GND_1_o_counter[23]_LessThan_282_o_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_GND_1_o_counter[23]_LessThan_282_o_cy<2> (Mcompar_GND_1_o_counter[23]_LessThan_282_o_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_GND_1_o_counter[23]_LessThan_282_o_cy<3> (Mcompar_GND_1_o_counter[23]_LessThan_282_o_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_GND_1_o_counter[23]_LessThan_282_o_cy<4> (Mcompar_GND_1_o_counter[23]_LessThan_282_o_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_GND_1_o_counter[23]_LessThan_282_o_cy<5> (Mcompar_GND_1_o_counter[23]_LessThan_282_o_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_GND_1_o_counter[23]_LessThan_282_o_cy<6> (Mcompar_GND_1_o_counter[23]_LessThan_282_o_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_GND_1_o_counter[23]_LessThan_282_o_cy<7> (Mcompar_GND_1_o_counter[23]_LessThan_282_o_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_GND_1_o_counter[23]_LessThan_282_o_cy<8> (Mcompar_GND_1_o_counter[23]_LessThan_282_o_cy<8>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_GND_1_o_counter[23]_LessThan_282_o_cy<9> (Mcompar_GND_1_o_counter[23]_LessThan_282_o_cy<9>)
+     MUXCY:CI->O         115   0.023   2.255  Mcompar_GND_1_o_counter[23]_LessThan_282_o_cy<10> (Mcompar_GND_1_o_counter[23]_LessThan_282_o_cy<10>)
+     LUT6:I5->O           27   0.254   1.435  _n1072_inv (_n1072_inv)
+     FDE:CE                    0.302          int_rpm_1
+    ----------------------------------------
+    Total                     74.022ns (17.975ns logic, 56.046ns route)
+                                       (24.3% logic, 75.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'i_SPI_Clk'
+  Clock period: 3.141ns (frequency: 318.370MHz)
+  Total number of paths / destination ports: 55 / 29
+-------------------------------------------------------------------------
+Delay:               3.141ns (Levels of Logic = 1)
+  Source:            r_RX_Bit_Count_1 (FF)
+  Destination:       r_RX_Byte_0 (FF)
+  Source Clock:      i_SPI_Clk rising
+  Destination Clock: i_SPI_Clk rising
+
+  Data Path: r_RX_Bit_Count_1 to r_RX_Byte_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              5   0.525   1.117  r_RX_Bit_Count_1 (r_RX_Bit_Count_1)
+     LUT4:I0->O            8   0.254   0.943  _n0959_inv1 (_n0959_inv)
+     FDE:CE                    0.302          r_RX_Byte_0
+    ----------------------------------------
+    Total                      3.141ns (1.081ns logic, 2.060ns route)
+                                       (34.4% logic, 65.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'i_Clk'
+  Total number of paths / destination ports: 1123 / 840
+-------------------------------------------------------------------------
+Offset:              8.715ns (Levels of Logic = 6)
+  Source:            i_Rst_L (PAD)
+  Destination:       int_rpm_2 (FF)
+  Destination Clock: i_Clk rising
+
+  Data Path: i_Rst_L to int_rpm_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            49   1.328   1.804  i_Rst_L_IBUF (i_Rst_L_IBUF)
+     LUT3:I2->O           32   0.254   1.748  GND_1_o_GND_1_o_AND_272_o1 (GND_1_o_GND_1_o_AND_272_o)
+     LUT5:I2->O            3   0.235   1.042  Mmux_int_rpm[23]_int_rpm[23]_mux_309_OUT342 (Mmux_int_rpm[23]_int_rpm[23]_mux_309_OUT341)
+     LUT6:I2->O            1   0.254   0.682  Mmux_int_rpm[23]_int_rpm[23]_mux_309_OUT347_SW1_SW0 (N267)
+     LUT5:I4->O            1   0.254   0.790  Mmux_int_rpm[23]_int_rpm[23]_mux_309_OUT347_SW1 (N129)
+     LUT6:I4->O            1   0.250   0.000  Mmux_int_rpm[23]_int_rpm[23]_mux_309_OUT347 (int_rpm[23]_int_rpm[23]_mux_309_OUT<2>)
+     FDE:D                     0.074          int_rpm_2
+    ----------------------------------------
+    Total                      8.715ns (2.649ns logic, 6.066ns route)
+                                       (30.4% logic, 69.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'i_SPI_Clk'
+  Total number of paths / destination ports: 24 / 24
+-------------------------------------------------------------------------
+Offset:              3.907ns (Levels of Logic = 2)
+  Source:            i_SPI_CS_n (PAD)
+  Destination:       r_RX_Byte_0 (FF)
+  Destination Clock: i_SPI_Clk rising
+
+  Data Path: i_SPI_CS_n to r_RX_Byte_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             9   1.328   1.084  i_SPI_CS_n_IBUF (i_SPI_CS_n_IBUF)
+     LUT4:I2->O            8   0.250   0.943  _n0959_inv1 (_n0959_inv)
+     FDE:CE                    0.302          r_RX_Byte_0
+    ----------------------------------------
+    Total                      3.907ns (1.880ns logic, 2.027ns route)
+                                       (48.1% logic, 51.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'i_Clk'
+  Total number of paths / destination ports: 77 / 30
+-------------------------------------------------------------------------
+Offset:              7.323ns (Levels of Logic = 9)
+  Source:            data_out_16 (FF)
+  Destination:       o_SPI_MISO (PAD)
+  Source Clock:      i_Clk rising
+
+  Data Path: data_out_16 to o_SPI_MISO
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             3   0.525   1.196  data_out_16 (data_out_16)
+     LUT6:I1->O            1   0.254   0.000  Mcompar_dist[15]_data_out[31]_equal_334_o_lut<0> (Mcompar_dist[15]_data_out[31]_equal_334_o_lut<0>)
+     MUXCY:S->O            1   0.215   0.000  Mcompar_dist[15]_data_out[31]_equal_334_o_cy<0> (Mcompar_dist[15]_data_out[31]_equal_334_o_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_dist[15]_data_out[31]_equal_334_o_cy<1> (Mcompar_dist[15]_data_out[31]_equal_334_o_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_dist[15]_data_out[31]_equal_334_o_cy<2> (Mcompar_dist[15]_data_out[31]_equal_334_o_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_dist[15]_data_out[31]_equal_334_o_cy<3> (Mcompar_dist[15]_data_out[31]_equal_334_o_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_dist[15]_data_out[31]_equal_334_o_cy<4> (Mcompar_dist[15]_data_out[31]_equal_334_o_cy<4>)
+     MUXCY:CI->O           1   0.235   0.958  Mcompar_dist[15]_data_out[31]_equal_334_o_cy<5> (dist[15]_data_out[31]_equal_334_o)
+     LUT4:I0->O            1   0.254   0.681  rpm[15]_dist[15]_OR_151_o (o_SPI_MISO_OBUF)
+     OBUF:I->O                 2.912          o_SPI_MISO_OBUF (o_SPI_MISO)
+    ----------------------------------------
+    Total                      7.323ns (4.488ns logic, 2.835ns route)
+                                       (61.3% logic, 38.7% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock i_Clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+i_Clk          |   74.022|         |         |         |
+i_SPI_Clk      |    1.903|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock i_SPI_Clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+i_SPI_Clk      |    3.141|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 26.00 secs
+Total CPU time to Xst completion: 25.84 secs
+ 
+--> 
+
+Total memory usage is 4523020 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  138 (   0 filtered)
+Number of infos    :   25 (   0 filtered)
+

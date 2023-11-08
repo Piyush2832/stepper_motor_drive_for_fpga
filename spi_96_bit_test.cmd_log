@@ -1,0 +1,10 @@
+xst -intstyle ise -ifn "D:/PIyuSH/4 - axis drive/spi_using_3_axis_test/spi_96_bit_test.xst" -ofn "D:/PIyuSH/4 - axis drive/spi_using_3_axis_test/spi_96_bit_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-tqg144-2 "spi_96_bit_test.ngc" spi_96_bit_test.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o spi_96_bit_test_map.ncd spi_96_bit_test.ngd spi_96_bit_test.pcf 
+par -w -intstyle ise -ol high -mt off spi_96_bit_test_map.ncd spi_96_bit_test.ncd spi_96_bit_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml spi_96_bit_test.twx spi_96_bit_test.ncd -o spi_96_bit_test.twr spi_96_bit_test.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-tqg144-2 "spi_96_bit_test.ngc" spi_96_bit_test.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o spi_96_bit_test_map.ncd spi_96_bit_test.ngd spi_96_bit_test.pcf 
+par -w -intstyle ise -ol high -mt off spi_96_bit_test_map.ncd spi_96_bit_test.ncd spi_96_bit_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml spi_96_bit_test.twx spi_96_bit_test.ncd -o spi_96_bit_test.twr spi_96_bit_test.pcf 
+bitgen -intstyle ise -f spi_96_bit_test.ut spi_96_bit_test.ncd 

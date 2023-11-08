@@ -1,0 +1,35 @@
+xst -intstyle ise -ifn "D:/PIyuSH/4 - axis drive/spi_using_3_axis_test/SPI_Slave.xst" -ofn "D:/PIyuSH/4 - axis drive/spi_using_3_axis_test/SPI_Slave.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc spi_96_bits_catn.ucf -p xc6slx9-tqg144-2 "SPI_Slave.ngc" SPI_Slave.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc spi_96_bits_catn.ucf -p xc6slx9-tqg144-2 "SPI_Slave.ngc" SPI_Slave.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o SPI_Slave_map.ncd SPI_Slave.ngd SPI_Slave.pcf 
+par -w -intstyle ise -ol high -mt off SPI_Slave_map.ncd SPI_Slave.ncd SPI_Slave.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml SPI_Slave.twx SPI_Slave.ncd -o SPI_Slave.twr SPI_Slave.pcf -ucf spi_96_bits_catn.ucf 
+bitgen -intstyle ise -f SPI_Slave.ut SPI_Slave.ncd 
+xst -intstyle ise -ifn "D:/PIyuSH/4 - axis drive/spi_using_3_axis_test/SPI_Slave.xst" -ofn "D:/PIyuSH/4 - axis drive/spi_using_3_axis_test/SPI_Slave.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc spi_96_bits_catn.ucf -p xc6slx9-tqg144-2 "SPI_Slave.ngc" SPI_Slave.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o SPI_Slave_map.ncd SPI_Slave.ngd SPI_Slave.pcf 
+par -w -intstyle ise -ol high -mt off SPI_Slave_map.ncd SPI_Slave.ncd SPI_Slave.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml SPI_Slave.twx SPI_Slave.ncd -o SPI_Slave.twr SPI_Slave.pcf -ucf spi_96_bits_catn.ucf 
+bitgen -intstyle ise -f SPI_Slave.ut SPI_Slave.ncd 
+xst -intstyle ise -ifn "D:/PIyuSH/4 - axis drive/spi_using_3_axis_test/SPI_Slave.xst" -ofn "D:/PIyuSH/4 - axis drive/spi_using_3_axis_test/SPI_Slave.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc spi_96_bits_catn.ucf -p xc6slx9-tqg144-2 "SPI_Slave.ngc" SPI_Slave.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc spi_96_bits_catn.ucf -p xc6slx9-tqg144-2 "SPI_Slave.ngc" SPI_Slave.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc spi_96_bits_catn.ucf -p xc6slx9-tqg144-2 "SPI_Slave.ngc" SPI_Slave.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o SPI_Slave_map.ncd SPI_Slave.ngd SPI_Slave.pcf 
+par -w -intstyle ise -ol high -mt off SPI_Slave_map.ncd SPI_Slave.ncd SPI_Slave.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml SPI_Slave.twx SPI_Slave.ncd -o SPI_Slave.twr SPI_Slave.pcf -ucf spi_96_bits_catn.ucf 
+bitgen -intstyle ise -f SPI_Slave.ut SPI_Slave.ncd 
+bitgen -intstyle ise -f SPI_Slave.ut SPI_Slave.ncd 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim SPI_Slave.ngc SPI_Slave_synthesis.v 
+xst -intstyle ise -ifn "D:/PIyuSH/4 - axis drive/spi_using_3_axis_test/SPI_Slave.xst" -ofn "D:/PIyuSH/4 - axis drive/spi_using_3_axis_test/SPI_Slave.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc spi_96_bits_catn.ucf -p xc6slx9-tqg144-2 "SPI_Slave.ngc" SPI_Slave.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o SPI_Slave_map.ncd SPI_Slave.ngd SPI_Slave.pcf 
+par -w -intstyle ise -ol high -mt off SPI_Slave_map.ncd SPI_Slave.ncd SPI_Slave.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml SPI_Slave.twx SPI_Slave.ncd -o SPI_Slave.twr SPI_Slave.pcf -ucf spi_96_bits_catn.ucf 
+bitgen -intstyle ise -f SPI_Slave.ut SPI_Slave.ncd 
+xst -intstyle ise -ifn "D:/PIyuSH/4 - axis drive/spi_using_3_axis_test/SPI_Slave.xst" -ofn "D:/PIyuSH/4 - axis drive/spi_using_3_axis_test/SPI_Slave.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc spi_96_bits_catn.ucf -p xc6slx9-tqg144-2 "SPI_Slave.ngc" SPI_Slave.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o SPI_Slave_map.ncd SPI_Slave.ngd SPI_Slave.pcf 
+par -w -intstyle ise -ol high -mt off SPI_Slave_map.ncd SPI_Slave.ncd SPI_Slave.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml SPI_Slave.twx SPI_Slave.ncd -o SPI_Slave.twr SPI_Slave.pcf -ucf spi_96_bits_catn.ucf 
+bitgen -intstyle ise -f SPI_Slave.ut SPI_Slave.ncd 

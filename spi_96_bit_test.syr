@@ -1,0 +1,1413 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.32 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.33 secs
+ 
+--> Reading design: spi_96_bit_test.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "spi_96_bit_test.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "spi_96_bit_test"
+Output Format                      : NGC
+Target Device                      : xc6slx9-2-tqg144
+
+---- Source Options
+Top Module Name                    : spi_96_bit_test
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "D:\PIyuSH\4 - axis drive\spi_using_3_axis_test\spi_96_bit_test.v" into library work
+Parsing module <spi_96_bit_test>.
+INFO:HDLCompiler:693 - "D:\PIyuSH\4 - axis drive\spi_using_3_axis_test\spi_96_bit_test.v" Line 95. parameter declaration becomes local in spi_96_bit_test with formal parameter declaration list
+INFO:HDLCompiler:693 - "D:\PIyuSH\4 - axis drive\spi_using_3_axis_test\spi_96_bit_test.v" Line 96. parameter declaration becomes local in spi_96_bit_test with formal parameter declaration list
+INFO:HDLCompiler:693 - "D:\PIyuSH\4 - axis drive\spi_using_3_axis_test\spi_96_bit_test.v" Line 97. parameter declaration becomes local in spi_96_bit_test with formal parameter declaration list
+INFO:HDLCompiler:693 - "D:\PIyuSH\4 - axis drive\spi_using_3_axis_test\spi_96_bit_test.v" Line 98. parameter declaration becomes local in spi_96_bit_test with formal parameter declaration list
+INFO:HDLCompiler:693 - "D:\PIyuSH\4 - axis drive\spi_using_3_axis_test\spi_96_bit_test.v" Line 99. parameter declaration becomes local in spi_96_bit_test with formal parameter declaration list
+INFO:HDLCompiler:693 - "D:\PIyuSH\4 - axis drive\spi_using_3_axis_test\spi_96_bit_test.v" Line 100. parameter declaration becomes local in spi_96_bit_test with formal parameter declaration list
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <spi_96_bit_test>.
+WARNING:HDLCompiler:872 - "D:\PIyuSH\4 - axis drive\spi_using_3_axis_test\spi_96_bit_test.v" Line 149: Using initial value of pulse_rate since it is never assigned
+WARNING:HDLCompiler:1127 - "D:\PIyuSH\4 - axis drive\spi_using_3_axis_test\spi_96_bit_test.v" Line 173: Assignment to w_CPOL ignored, since the identifier is never used
+WARNING:HDLCompiler:413 - "D:\PIyuSH\4 - axis drive\spi_using_3_axis_test\spi_96_bit_test.v" Line 196: Result of 32-bit expression is truncated to fit in 24-bit target.
+WARNING:HDLCompiler:413 - "D:\PIyuSH\4 - axis drive\spi_using_3_axis_test\spi_96_bit_test.v" Line 197: Result of 32-bit expression is truncated to fit in 24-bit target.
+WARNING:HDLCompiler:413 - "D:\PIyuSH\4 - axis drive\spi_using_3_axis_test\spi_96_bit_test.v" Line 224: Result of 17-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "D:\PIyuSH\4 - axis drive\spi_using_3_axis_test\spi_96_bit_test.v" Line 247: Result of 17-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "D:\PIyuSH\4 - axis drive\spi_using_3_axis_test\spi_96_bit_test.v" Line 259: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "D:\PIyuSH\4 - axis drive\spi_using_3_axis_test\spi_96_bit_test.v" Line 279: Result of 17-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "D:\PIyuSH\4 - axis drive\spi_using_3_axis_test\spi_96_bit_test.v" Line 291: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "D:\PIyuSH\4 - axis drive\spi_using_3_axis_test\spi_96_bit_test.v" Line 311: Result of 17-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "D:\PIyuSH\4 - axis drive\spi_using_3_axis_test\spi_96_bit_test.v" Line 323: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "D:\PIyuSH\4 - axis drive\spi_using_3_axis_test\spi_96_bit_test.v" Line 343: Result of 17-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "D:\PIyuSH\4 - axis drive\spi_using_3_axis_test\spi_96_bit_test.v" Line 355: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "D:\PIyuSH\4 - axis drive\spi_using_3_axis_test\spi_96_bit_test.v" Line 377: Result of 17-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "D:\PIyuSH\4 - axis drive\spi_using_3_axis_test\spi_96_bit_test.v" Line 412: Result of 25-bit expression is truncated to fit in 24-bit target.
+WARNING:HDLCompiler:413 - "D:\PIyuSH\4 - axis drive\spi_using_3_axis_test\spi_96_bit_test.v" Line 424: Result of 32-bit expression is truncated to fit in 24-bit target.
+WARNING:HDLCompiler:413 - "D:\PIyuSH\4 - axis drive\spi_using_3_axis_test\spi_96_bit_test.v" Line 482: Result of 25-bit expression is truncated to fit in 24-bit target.
+WARNING:HDLCompiler:413 - "D:\PIyuSH\4 - axis drive\spi_using_3_axis_test\spi_96_bit_test.v" Line 634: Result of 4-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "D:\PIyuSH\4 - axis drive\spi_using_3_axis_test\spi_96_bit_test.v" Line 709: Result of 32-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "D:\PIyuSH\4 - axis drive\spi_using_3_axis_test\spi_96_bit_test.v" Line 758: Result of 25-bit expression is truncated to fit in 24-bit target.
+WARNING:HDLCompiler:413 - "D:\PIyuSH\4 - axis drive\spi_using_3_axis_test\spi_96_bit_test.v" Line 770: Result of 32-bit expression is truncated to fit in 24-bit target.
+WARNING:HDLCompiler:413 - "D:\PIyuSH\4 - axis drive\spi_using_3_axis_test\spi_96_bit_test.v" Line 831: Result of 25-bit expression is truncated to fit in 24-bit target.
+WARNING:HDLCompiler:413 - "D:\PIyuSH\4 - axis drive\spi_using_3_axis_test\spi_96_bit_test.v" Line 882: Result of 25-bit expression is truncated to fit in 24-bit target.
+WARNING:HDLCompiler:413 - "D:\PIyuSH\4 - axis drive\spi_using_3_axis_test\spi_96_bit_test.v" Line 894: Result of 32-bit expression is truncated to fit in 24-bit target.
+WARNING:HDLCompiler:413 - "D:\PIyuSH\4 - axis drive\spi_using_3_axis_test\spi_96_bit_test.v" Line 955: Result of 25-bit expression is truncated to fit in 24-bit target.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <spi_96_bit_test>.
+    Related source file is "D:\PIyuSH\4 - axis drive\spi_using_3_axis_test\spi_96_bit_test.v".
+        CLKS_PER_BIT = 104
+WARNING:Xst:647 - Input <E_STOP> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 3-bit register for signal <r_TX_Bit_Count>.
+    Found 1-bit register for signal <flag>.
+    Found 1-bit register for signal <r2_RX_Done>.
+    Found 1-bit register for signal <r3_RX_Done>.
+    Found 1-bit register for signal <o_RX_DV>.
+    Found 1-bit register for signal <r_RX_Done>.
+    Found 96-bit register for signal <data_out>.
+    Found 4-bit register for signal <data_check>.
+    Found 8-bit register for signal <first8>.
+    Found 8-bit register for signal <second8>.
+    Found 8-bit register for signal <third8>.
+    Found 8-bit register for signal <fourth8>.
+    Found 8-bit register for signal <fifth8>.
+    Found 8-bit register for signal <sixth8>.
+    Found 8-bit register for signal <seventh8>.
+    Found 8-bit register for signal <eighth8>.
+    Found 8-bit register for signal <ninth8>.
+    Found 8-bit register for signal <tenth8>.
+    Found 8-bit register for signal <eleven8>.
+    Found 8-bit register for signal <twelve8>.
+    Found 8-bit register for signal <o_RX_Byte>.
+    Found 3-bit register for signal <r_RX_Bit_Count>.
+    Found 3-bit register for signal <old_r_TX_Bit_Count>.
+    Found 1-bit register for signal <r_Preload_MISO>.
+    Found 1-bit register for signal <o_Tx_Done>.
+    Found 1-bit register for signal <o_Tx_Serial>.
+    Found 16-bit register for signal <r_Clock_Count>.
+    Found 1-bit register for signal <o_Tx_Active>.
+    Found 8-bit register for signal <r_Tx_Data>.
+    Found 4-bit register for signal <r_Bit_Index>.
+    Found 2-bit register for signal <data_checks>.
+    Found 24-bit register for signal <counter1>.
+    Found 24-bit register for signal <counter2>.
+    Found 24-bit register for signal <int_rpm>.
+    Found 32-bit register for signal <cnt>.
+    Found 1-bit register for signal <stop>.
+    Found 1-bit register for signal <pulses>.
+    Found 16-bit register for signal <dist>.
+    Found 16-bit register for signal <rpm>.
+    Found 1-bit register for signal <pin1>.
+    Found 1-bit register for signal <pin2>.
+    Found 24-bit register for signal <counter>.
+    Found 1-bit register for signal <toggle>.
+    Found 32-bit register for signal <dist2>.
+    Found 32-bit register for signal <dist3>.
+    Found 8-bit register for signal <r_Temp_RX_Byte>.
+    Found 8-bit register for signal <r_RX_Byte>.
+    Found 1-bit register for signal <o_TX_sent>.
+    Found 8-bit register for signal <r_TX_Byte>.
+    Found 24-bit register for signal <int_rpmx>.
+    Found 32-bit register for signal <cntx>.
+    Found 1-bit register for signal <stopx>.
+    Found 1-bit register for signal <pulses_x>.
+    Found 16-bit register for signal <distx>.
+    Found 16-bit register for signal <rpmx>.
+    Found 1-bit register for signal <pin1x>.
+    Found 1-bit register for signal <pin2x>.
+    Found 24-bit register for signal <counterx>.
+    Found 1-bit register for signal <togglex>.
+    Found 32-bit register for signal <dist2x>.
+    Found 32-bit register for signal <dist3x>.
+    Found 24-bit register for signal <int_rpmy>.
+    Found 32-bit register for signal <cnty>.
+    Found 1-bit register for signal <stopy>.
+    Found 1-bit register for signal <pulses_y>.
+    Found 16-bit register for signal <disty>.
+    Found 16-bit register for signal <rpmy>.
+    Found 1-bit register for signal <pin1y>.
+    Found 1-bit register for signal <pin2y>.
+    Found 24-bit register for signal <countery>.
+    Found 1-bit register for signal <toggley>.
+    Found 32-bit register for signal <dist2y>.
+    Found 32-bit register for signal <dist3y>.
+    Found 3-bit register for signal <r_SM_Main>.
+    Found 1-bit register for signal <r_SPI_MISO_Bit>.
+    Found 22-bit register for signal <dist1x>.
+    Found 22-bit register for signal <dist1>.
+    Found 22-bit register for signal <storex>.
+    Found 22-bit register for signal <store>.
+    Found 22-bit register for signal <storey>.
+    Found 22-bit register for signal <dist1y>.
+    Found finite state machine <FSM_0> for signal <data_check>.
+    -----------------------------------------------------------------------
+    | States             | 12                                             |
+    | Transitions        | 36                                             |
+    | Inputs             | 2                                              |
+    | Outputs            | 13                                             |
+    | Clock              | i_Clk (rising_edge)                            |
+    | Reset              | i_Rst_L (negative)                             |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 0000                                           |
+    | Power Up State     | 0000                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found finite state machine <FSM_1> for signal <r_SM_Main>.
+    -----------------------------------------------------------------------
+    | States             | 5                                              |
+    | Transitions        | 11                                             |
+    | Inputs             | 4                                              |
+    | Outputs            | 6                                              |
+    | Clock              | i_Clk (rising_edge)                            |
+    | Power Up State     | 000                                            |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found finite state machine <FSM_2> for signal <data_checks>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 24                                             |
+    | Inputs             | 5                                              |
+    | Outputs            | 6                                              |
+    | Clock              | i_Clk (rising_edge)                            |
+    | Power Up State     | 00                                             |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 17-bit subtractor for signal <GND_1_o_GND_1_o_sub_111_OUT> created at line 408.
+    Found 32-bit subtractor for signal <dist1[31]_dist3[31]_sub_118_OUT> created at line 415.
+    Found 17-bit subtractor for signal <GND_1_o_GND_1_o_sub_151_OUT> created at line 504.
+    Found 17-bit subtractor for signal <GND_1_o_GND_1_o_sub_267_OUT> created at line 754.
+    Found 32-bit subtractor for signal <dist1x[31]_dist3x[31]_sub_274_OUT> created at line 761.
+    Found 17-bit subtractor for signal <GND_1_o_GND_1_o_sub_307_OUT> created at line 853.
+    Found 17-bit subtractor for signal <GND_1_o_GND_1_o_sub_333_OUT> created at line 878.
+    Found 32-bit subtractor for signal <dist1y[31]_dist3y[31]_sub_340_OUT> created at line 885.
+    Found 17-bit subtractor for signal <GND_1_o_GND_1_o_sub_373_OUT> created at line 977.
+    Found 25-bit adder for signal <n0779[24:0]> created at line 196.
+    Found 25-bit adder for signal <n0781[24:0]> created at line 197.
+    Found 4-bit adder for signal <r_Bit_Index[3]_GND_1_o_add_19_OUT> created at line 259.
+    Found 16-bit adder for signal <r_Clock_Count[15]_GND_1_o_add_87_OUT> created at line 377.
+    Found 24-bit adder for signal <int_rpm[23]_GND_1_o_add_115_OUT> created at line 412.
+    Found 32-bit adder for signal <cnt[31]_GND_1_o_add_127_OUT> created at line 434.
+    Found 24-bit adder for signal <counter[23]_GND_1_o_add_142_OUT> created at line 482.
+    Found 32-bit adder for signal <dist2[31]_GND_1_o_add_149_OUT> created at line 502.
+    Found 3-bit adder for signal <r_RX_Bit_Count[2]_GND_1_o_add_239_OUT> created at line 634.
+    Found 24-bit adder for signal <int_rpmx[23]_GND_1_o_add_271_OUT> created at line 758.
+    Found 32-bit adder for signal <cntx[31]_GND_1_o_add_283_OUT> created at line 780.
+    Found 24-bit adder for signal <counterx[23]_GND_1_o_add_298_OUT> created at line 831.
+    Found 32-bit adder for signal <dist2x[31]_GND_1_o_add_305_OUT> created at line 851.
+    Found 24-bit adder for signal <int_rpmy[23]_GND_1_o_add_337_OUT> created at line 882.
+    Found 32-bit adder for signal <cnty[31]_GND_1_o_add_349_OUT> created at line 904.
+    Found 24-bit adder for signal <countery[23]_GND_1_o_add_364_OUT> created at line 955.
+    Found 32-bit adder for signal <dist2y[31]_GND_1_o_add_371_OUT> created at line 975.
+    Found 24-bit subtractor for signal <GND_1_o_GND_1_o_sub_123_OUT<23:0>> created at line 424.
+    Found 3-bit subtractor for signal <GND_1_o_GND_1_o_sub_253_OUT<2:0>> created at line 709.
+    Found 24-bit subtractor for signal <GND_1_o_GND_1_o_sub_279_OUT<23:0>> created at line 770.
+    Found 24-bit subtractor for signal <GND_1_o_GND_1_o_sub_345_OUT<23:0>> created at line 894.
+    Found 6x16-bit multiplier for signal <PWR_1_o_dist[15]_MuLt_134_OUT> created at line 443.
+    Found 6x16-bit multiplier for signal <PWR_1_o_distx[15]_MuLt_290_OUT> created at line 789.
+    Found 6x16-bit multiplier for signal <PWR_1_o_disty[15]_MuLt_356_OUT> created at line 913.
+    Found 1-bit 8-to-1 multiplexer for signal <r_Bit_Index[2]_r_Tx_Data[7]_Mux_15_o> created at line 241.
+    Found 1-bit 8-to-1 multiplexer for signal <r_TX_Bit_Count[2]_r_TX_Byte[7]_Mux_253_o> created at line 713.
+    Found 8-bit 4-to-1 multiplexer for signal <r_Tx_Data[7]_data_out[31]_mux_81_OUT> created at line 335.
+    Found 1-bit tristate buffer for signal <o_SPI_MISO> created at line 1006
+    Found 24-bit comparator greater for signal <n0008> created at line 199
+    Found 24-bit comparator greater for signal <n0010> created at line 199
+    Found 4-bit comparator greater for signal <r_Bit_Index[3]_GND_1_o_LessThan_19_o> created at line 257
+    Found 16-bit comparator greater for signal <r_Clock_Count[15]_GND_1_o_LessThan_87_o> created at line 375
+    Found 32-bit comparator greater for signal <GND_1_o_cnt[31]_LessThan_110_o> created at line 407
+    Found 32-bit comparator greater for signal <GND_1_o_GND_1_o_LessThan_112_o> created at line 408
+    Found 24-bit comparator greater for signal <GND_1_o_int_rpm[23]_LessThan_115_o> created at line 409
+    Found 32-bit comparator greater for signal <dist2[31]_dist1[31]_LessThan_119_o> created at line 415
+    Found 16-bit comparator greater for signal <GND_1_o_rpm[15]_LessThan_120_o> created at line 416
+    Found 32-bit comparator greater for signal <dist2[31]_dist1[31]_LessThan_122_o> created at line 422
+    Found 24-bit comparator greater for signal <store[23]_counter[23]_LessThan_144_o> created at line 484
+    Found 32-bit comparator greater for signal <GND_1_o_dist2[31]_LessThan_145_o> created at line 490
+    Found 32-bit comparator greater for signal <n0130> created at line 504
+    Found 32-bit comparator greater for signal <GND_1_o_cntx[31]_LessThan_266_o> created at line 753
+    Found 32-bit comparator greater for signal <GND_1_o_GND_1_o_LessThan_268_o> created at line 754
+    Found 24-bit comparator greater for signal <GND_1_o_int_rpmx[23]_LessThan_271_o> created at line 755
+    Found 32-bit comparator greater for signal <dist2x[31]_dist1x[31]_LessThan_275_o> created at line 761
+    Found 16-bit comparator greater for signal <GND_1_o_rpmx[15]_LessThan_276_o> created at line 762
+    Found 32-bit comparator greater for signal <dist2x[31]_dist1x[31]_LessThan_278_o> created at line 768
+    Found 24-bit comparator greater for signal <storex[23]_counterx[23]_LessThan_300_o> created at line 833
+    Found 32-bit comparator greater for signal <GND_1_o_dist2x[31]_LessThan_301_o> created at line 839
+    Found 32-bit comparator greater for signal <n0318> created at line 853
+    Found 32-bit comparator greater for signal <GND_1_o_cnty[31]_LessThan_332_o> created at line 877
+    Found 32-bit comparator greater for signal <GND_1_o_GND_1_o_LessThan_334_o> created at line 878
+    Found 24-bit comparator greater for signal <GND_1_o_int_rpmy[23]_LessThan_337_o> created at line 879
+    Found 32-bit comparator greater for signal <dist2y[31]_dist1y[31]_LessThan_341_o> created at line 885
+    Found 16-bit comparator greater for signal <GND_1_o_rpmy[15]_LessThan_342_o> created at line 886
+    Found 32-bit comparator greater for signal <dist2y[31]_dist1y[31]_LessThan_344_o> created at line 892
+    Found 24-bit comparator greater for signal <storey[23]_countery[23]_LessThan_366_o> created at line 957
+    Found 32-bit comparator greater for signal <GND_1_o_dist2y[31]_LessThan_367_o> created at line 963
+    Found 32-bit comparator greater for signal <n0398> created at line 977
+    WARNING:Xst:2404 -  FFs/Latches <dist1x<31:22>> (without init value) have a constant value of 0 in block <spi_96_bit_test>.
+    WARNING:Xst:2404 -  FFs/Latches <dist1<31:22>> (without init value) have a constant value of 0 in block <spi_96_bit_test>.
+    WARNING:Xst:2404 -  FFs/Latches <storex<23:22>> (without init value) have a constant value of 0 in block <spi_96_bit_test>.
+    WARNING:Xst:2404 -  FFs/Latches <store<23:22>> (without init value) have a constant value of 0 in block <spi_96_bit_test>.
+    WARNING:Xst:2404 -  FFs/Latches <storey<23:22>> (without init value) have a constant value of 0 in block <spi_96_bit_test>.
+    WARNING:Xst:2404 -  FFs/Latches <dist1y<31:22>> (without init value) have a constant value of 0 in block <spi_96_bit_test>.
+    Summary:
+	inferred   3 Multiplier(s).
+	inferred  27 Adder/Subtractor(s).
+	inferred 995 D-type flip-flop(s).
+	inferred  31 Comparator(s).
+	inferred  55 Multiplexer(s).
+	inferred   1 Tristate(s).
+	inferred   3 Finite State Machine(s).
+Unit <spi_96_bit_test> synthesized.
+
+Synthesizing Unit <div_22u_24u>.
+    Related source file is "".
+    Found 46-bit adder for signal <n1798> created at line 0.
+    Found 46-bit adder for signal <GND_2_o_b[23]_add_1_OUT> created at line 0.
+    Found 45-bit adder for signal <n1802> created at line 0.
+    Found 45-bit adder for signal <GND_2_o_b[23]_add_3_OUT> created at line 0.
+    Found 44-bit adder for signal <n1806> created at line 0.
+    Found 44-bit adder for signal <GND_2_o_b[23]_add_5_OUT> created at line 0.
+    Found 43-bit adder for signal <n1810> created at line 0.
+    Found 43-bit adder for signal <GND_2_o_b[23]_add_7_OUT> created at line 0.
+    Found 42-bit adder for signal <n1814> created at line 0.
+    Found 42-bit adder for signal <GND_2_o_b[23]_add_9_OUT> created at line 0.
+    Found 41-bit adder for signal <n1818> created at line 0.
+    Found 41-bit adder for signal <GND_2_o_b[23]_add_11_OUT> created at line 0.
+    Found 40-bit adder for signal <n1822> created at line 0.
+    Found 40-bit adder for signal <GND_2_o_b[23]_add_13_OUT> created at line 0.
+    Found 39-bit adder for signal <n1826> created at line 0.
+    Found 39-bit adder for signal <GND_2_o_b[23]_add_15_OUT> created at line 0.
+    Found 38-bit adder for signal <n1830> created at line 0.
+    Found 38-bit adder for signal <GND_2_o_b[23]_add_17_OUT> created at line 0.
+    Found 37-bit adder for signal <n1834> created at line 0.
+    Found 37-bit adder for signal <GND_2_o_b[23]_add_19_OUT> created at line 0.
+    Found 36-bit adder for signal <n1838> created at line 0.
+    Found 36-bit adder for signal <GND_2_o_b[23]_add_21_OUT> created at line 0.
+    Found 35-bit adder for signal <n1842> created at line 0.
+    Found 35-bit adder for signal <GND_2_o_b[23]_add_23_OUT> created at line 0.
+    Found 34-bit adder for signal <n1846> created at line 0.
+    Found 34-bit adder for signal <GND_2_o_b[23]_add_25_OUT> created at line 0.
+    Found 33-bit adder for signal <n1850> created at line 0.
+    Found 33-bit adder for signal <GND_2_o_b[23]_add_27_OUT> created at line 0.
+    Found 32-bit adder for signal <n1854> created at line 0.
+    Found 32-bit adder for signal <GND_2_o_b[23]_add_29_OUT> created at line 0.
+    Found 31-bit adder for signal <n1858> created at line 0.
+    Found 31-bit adder for signal <GND_2_o_b[23]_add_31_OUT> created at line 0.
+    Found 30-bit adder for signal <n1862> created at line 0.
+    Found 30-bit adder for signal <GND_2_o_b[23]_add_33_OUT> created at line 0.
+    Found 29-bit adder for signal <n1866> created at line 0.
+    Found 29-bit adder for signal <GND_2_o_b[23]_add_35_OUT> created at line 0.
+    Found 28-bit adder for signal <n1870> created at line 0.
+    Found 28-bit adder for signal <GND_2_o_b[23]_add_37_OUT> created at line 0.
+    Found 27-bit adder for signal <n1874> created at line 0.
+    Found 27-bit adder for signal <GND_2_o_b[23]_add_39_OUT> created at line 0.
+    Found 26-bit adder for signal <n1878> created at line 0.
+    Found 26-bit adder for signal <GND_2_o_b[23]_add_41_OUT> created at line 0.
+    Found 25-bit adder for signal <n1882> created at line 0.
+    Found 25-bit adder for signal <GND_2_o_b[23]_add_43_OUT> created at line 0.
+    Found 46-bit comparator lessequal for signal <BUS_0001> created at line 0
+    Found 45-bit comparator lessequal for signal <BUS_0002> created at line 0
+    Found 44-bit comparator lessequal for signal <BUS_0003> created at line 0
+    Found 43-bit comparator lessequal for signal <BUS_0004> created at line 0
+    Found 42-bit comparator lessequal for signal <BUS_0005> created at line 0
+    Found 41-bit comparator lessequal for signal <BUS_0006> created at line 0
+    Found 40-bit comparator lessequal for signal <BUS_0007> created at line 0
+    Found 39-bit comparator lessequal for signal <BUS_0008> created at line 0
+    Found 38-bit comparator lessequal for signal <BUS_0009> created at line 0
+    Found 37-bit comparator lessequal for signal <BUS_0010> created at line 0
+    Found 36-bit comparator lessequal for signal <BUS_0011> created at line 0
+    Found 35-bit comparator lessequal for signal <BUS_0012> created at line 0
+    Found 34-bit comparator lessequal for signal <BUS_0013> created at line 0
+    Found 33-bit comparator lessequal for signal <BUS_0014> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0015> created at line 0
+    Found 31-bit comparator lessequal for signal <BUS_0016> created at line 0
+    Found 30-bit comparator lessequal for signal <BUS_0017> created at line 0
+    Found 29-bit comparator lessequal for signal <BUS_0018> created at line 0
+    Found 28-bit comparator lessequal for signal <BUS_0019> created at line 0
+    Found 27-bit comparator lessequal for signal <BUS_0020> created at line 0
+    Found 26-bit comparator lessequal for signal <BUS_0021> created at line 0
+    Found 25-bit comparator lessequal for signal <BUS_0022> created at line 0
+    Found 24-bit comparator lessequal for signal <BUS_0023> created at line 0
+    Summary:
+	inferred  44 Adder/Subtractor(s).
+	inferred  23 Comparator(s).
+	inferred 484 Multiplexer(s).
+Unit <div_22u_24u> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 3
+ 16x6-bit multiplier                                   : 3
+# Adders/Subtractors                                   : 159
+ 16-bit adder                                          : 1
+ 17-bit subtractor                                     : 6
+ 24-bit adder                                          : 3
+ 24-bit addsub                                         : 3
+ 25-bit adder                                          : 8
+ 26-bit adder                                          : 6
+ 27-bit adder                                          : 6
+ 28-bit adder                                          : 6
+ 29-bit adder                                          : 6
+ 3-bit adder                                           : 1
+ 3-bit subtractor                                      : 1
+ 30-bit adder                                          : 6
+ 31-bit adder                                          : 6
+ 32-bit adder                                          : 12
+ 32-bit subtractor                                     : 3
+ 33-bit adder                                          : 6
+ 34-bit adder                                          : 6
+ 35-bit adder                                          : 6
+ 36-bit adder                                          : 6
+ 37-bit adder                                          : 6
+ 38-bit adder                                          : 6
+ 39-bit adder                                          : 6
+ 4-bit adder                                           : 1
+ 40-bit adder                                          : 6
+ 41-bit adder                                          : 6
+ 42-bit adder                                          : 6
+ 43-bit adder                                          : 6
+ 44-bit adder                                          : 6
+ 45-bit adder                                          : 6
+ 46-bit adder                                          : 6
+# Registers                                            : 78
+ 1-bit register                                        : 26
+ 16-bit register                                       : 7
+ 22-bit register                                       : 6
+ 24-bit register                                       : 8
+ 3-bit register                                        : 3
+ 32-bit register                                       : 9
+ 4-bit register                                        : 1
+ 8-bit register                                        : 17
+ 96-bit register                                       : 1
+# Comparators                                          : 100
+ 16-bit comparator greater                             : 4
+ 24-bit comparator greater                             : 8
+ 24-bit comparator lessequal                           : 3
+ 25-bit comparator lessequal                           : 3
+ 26-bit comparator lessequal                           : 3
+ 27-bit comparator lessequal                           : 3
+ 28-bit comparator lessequal                           : 3
+ 29-bit comparator lessequal                           : 3
+ 30-bit comparator lessequal                           : 3
+ 31-bit comparator lessequal                           : 3
+ 32-bit comparator greater                             : 18
+ 32-bit comparator lessequal                           : 3
+ 33-bit comparator lessequal                           : 3
+ 34-bit comparator lessequal                           : 3
+ 35-bit comparator lessequal                           : 3
+ 36-bit comparator lessequal                           : 3
+ 37-bit comparator lessequal                           : 3
+ 38-bit comparator lessequal                           : 3
+ 39-bit comparator lessequal                           : 3
+ 4-bit comparator greater                              : 1
+ 40-bit comparator lessequal                           : 3
+ 41-bit comparator lessequal                           : 3
+ 42-bit comparator lessequal                           : 3
+ 43-bit comparator lessequal                           : 3
+ 44-bit comparator lessequal                           : 3
+ 45-bit comparator lessequal                           : 3
+ 46-bit comparator lessequal                           : 3
+# Multiplexers                                         : 1507
+ 1-bit 2-to-1 multiplexer                              : 1458
+ 1-bit 8-to-1 multiplexer                              : 2
+ 16-bit 2-to-1 multiplexer                             : 9
+ 24-bit 2-to-1 multiplexer                             : 33
+ 32-bit 2-to-1 multiplexer                             : 2
+ 4-bit 2-to-1 multiplexer                              : 2
+ 8-bit 4-to-1 multiplexer                              : 1
+# Tristates                                            : 1
+ 1-bit tristate buffer                                 : 1
+# FSMs                                                 : 3
+
+=========================================================================
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:2677 - Node <r_Temp_RX_Byte_7> of sequential type is unconnected in block <spi_96_bit_test>.
+
+Synthesizing (advanced) Unit <spi_96_bit_test>.
+The following registers are absorbed into counter <cnt>: 1 register on signal <cnt>.
+The following registers are absorbed into counter <cntx>: 1 register on signal <cntx>.
+The following registers are absorbed into counter <cnty>: 1 register on signal <cnty>.
+The following registers are absorbed into counter <counter>: 1 register on signal <counter>.
+The following registers are absorbed into counter <dist2>: 1 register on signal <dist2>.
+The following registers are absorbed into counter <counterx>: 1 register on signal <counterx>.
+The following registers are absorbed into counter <dist2x>: 1 register on signal <dist2x>.
+The following registers are absorbed into counter <countery>: 1 register on signal <countery>.
+The following registers are absorbed into counter <dist2y>: 1 register on signal <dist2y>.
+The following registers are absorbed into counter <r_TX_Bit_Count>: 1 register on signal <r_TX_Bit_Count>.
+The following registers are absorbed into counter <r_RX_Bit_Count>: 1 register on signal <r_RX_Bit_Count>.
+Unit <spi_96_bit_test> synthesized (advanced).
+WARNING:Xst:2677 - Node <r_Temp_RX_Byte_7> of sequential type is unconnected in block <spi_96_bit_test>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 3
+ 16x6-bit multiplier                                   : 3
+# Adders/Subtractors                                   : 82
+ 16-bit adder                                          : 1
+ 17-bit subtractor                                     : 6
+ 22-bit adder carry in                                 : 66
+ 24-bit addsub                                         : 3
+ 25-bit adder                                          : 2
+ 32-bit subtractor                                     : 3
+ 4-bit adder                                           : 1
+# Counters                                             : 11
+ 24-bit up counter                                     : 3
+ 3-bit down counter                                    : 1
+ 3-bit up counter                                      : 1
+ 32-bit up counter                                     : 6
+# Registers                                            : 724
+ Flip-Flops                                            : 724
+# Comparators                                          : 100
+ 16-bit comparator greater                             : 4
+ 24-bit comparator greater                             : 8
+ 24-bit comparator lessequal                           : 3
+ 25-bit comparator lessequal                           : 3
+ 26-bit comparator lessequal                           : 3
+ 27-bit comparator lessequal                           : 3
+ 28-bit comparator lessequal                           : 3
+ 29-bit comparator lessequal                           : 3
+ 30-bit comparator lessequal                           : 3
+ 31-bit comparator lessequal                           : 3
+ 32-bit comparator greater                             : 18
+ 32-bit comparator lessequal                           : 3
+ 33-bit comparator lessequal                           : 3
+ 34-bit comparator lessequal                           : 3
+ 35-bit comparator lessequal                           : 3
+ 36-bit comparator lessequal                           : 3
+ 37-bit comparator lessequal                           : 3
+ 38-bit comparator lessequal                           : 3
+ 39-bit comparator lessequal                           : 3
+ 4-bit comparator greater                              : 1
+ 40-bit comparator lessequal                           : 3
+ 41-bit comparator lessequal                           : 3
+ 42-bit comparator lessequal                           : 3
+ 43-bit comparator lessequal                           : 3
+ 44-bit comparator lessequal                           : 3
+ 45-bit comparator lessequal                           : 3
+ 46-bit comparator lessequal                           : 3
+# Multiplexers                                         : 1582
+ 1-bit 2-to-1 multiplexer                              : 1538
+ 1-bit 8-to-1 multiplexer                              : 2
+ 16-bit 2-to-1 multiplexer                             : 4
+ 24-bit 2-to-1 multiplexer                             : 33
+ 32-bit 2-to-1 multiplexer                             : 2
+ 4-bit 2-to-1 multiplexer                              : 2
+ 8-bit 4-to-1 multiplexer                              : 1
+# FSMs                                                 : 3
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <FSM_0> on signal <data_check[1:4]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 0000  | 0000
+ 0001  | 0001
+ 0010  | 0010
+ 0011  | 0011
+ 0100  | 0100
+ 0101  | 0101
+ 0110  | 0110
+ 0111  | 0111
+ 1000  | 1000
+ 1001  | 1001
+ 1010  | 1010
+ 1011  | 1011
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <FSM_1> on signal <r_SM_Main[1:3]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 000   | 000
+ 001   | 001
+ 010   | 010
+ 011   | 011
+ 100   | 100
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <FSM_2> on signal <data_checks[1:2]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 00
+ 11    | 11
+ 10    | 10
+ 01    | 01
+-------------------
+WARNING:Xst:3002 - This design contains one or more registers/latches that are directly
+   incompatible with the Spartan6 architecture. The two primary causes of this is
+   either a register or latch described with both an asynchronous set and
+   asynchronous reset, or a register or latch described with an asynchronous
+   set or reset which however has an initialization value of the opposite 
+   polarity (i.e. asynchronous reset with an initialization value of 1).
+    While this circuit can be built, it creates a sub-optimal implementation
+   in terms of area, power and performance. For a more optimal implementation
+   Xilinx highly recommends one of the following:
+
+          1) Remove either the set or reset from all registers and latches
+             if not needed for required functionality
+          2) Modify the code in order to produce a synchronous set
+             and/or reset (both is preferred)
+          3) Ensure all registers have the same initialization value as the
+             described asynchronous set or reset polarity
+          4) Use the -async_to_sync option to transform the asynchronous
+             set/reset to synchronous operation
+             (timing simulation highly recommended when using this option)
+
+  Please refer to http://www.xilinx.com search string "Spartan6 asynchronous set/reset" for more details.
+
+  List of register instances with asynchronous set and reset:
+    r_SPI_MISO_Bit in unit <spi_96_bit_test>
+
+
+Optimizing unit <spi_96_bit_test> ...
+WARNING:Xst:1293 - FF/Latch <r_Bit_Index_3> has a constant value of 0 in block <spi_96_bit_test>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <div_22u_24u> ...
+WARNING:Xst:1293 - FF/Latch <dist2_25> has a constant value of 0 in block <spi_96_bit_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <dist2_24> has a constant value of 0 in block <spi_96_bit_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <dist2_23> has a constant value of 0 in block <spi_96_bit_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <counter_23> has a constant value of 0 in block <spi_96_bit_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <counterx_23> has a constant value of 0 in block <spi_96_bit_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cntx_31> (without init value) has a constant value of 0 in block <spi_96_bit_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cntx_30> (without init value) has a constant value of 0 in block <spi_96_bit_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cntx_29> (without init value) has a constant value of 0 in block <spi_96_bit_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cntx_28> (without init value) has a constant value of 0 in block <spi_96_bit_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cntx_27> (without init value) has a constant value of 0 in block <spi_96_bit_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cntx_26> (without init value) has a constant value of 0 in block <spi_96_bit_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cntx_25> (without init value) has a constant value of 0 in block <spi_96_bit_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cntx_24> (without init value) has a constant value of 0 in block <spi_96_bit_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cntx_23> (without init value) has a constant value of 0 in block <spi_96_bit_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cnt_31> (without init value) has a constant value of 0 in block <spi_96_bit_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cnt_30> (without init value) has a constant value of 0 in block <spi_96_bit_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cnt_29> (without init value) has a constant value of 0 in block <spi_96_bit_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cnt_28> (without init value) has a constant value of 0 in block <spi_96_bit_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cnt_27> (without init value) has a constant value of 0 in block <spi_96_bit_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cnt_26> (without init value) has a constant value of 0 in block <spi_96_bit_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cnt_25> (without init value) has a constant value of 0 in block <spi_96_bit_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cnt_24> (without init value) has a constant value of 0 in block <spi_96_bit_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cnt_23> (without init value) has a constant value of 0 in block <spi_96_bit_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cnty_31> (without init value) has a constant value of 0 in block <spi_96_bit_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cnty_30> (without init value) has a constant value of 0 in block <spi_96_bit_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <countery_23> has a constant value of 0 in block <spi_96_bit_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <dist2x_31> has a constant value of 0 in block <spi_96_bit_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <dist2x_30> has a constant value of 0 in block <spi_96_bit_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <dist2x_29> has a constant value of 0 in block <spi_96_bit_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <dist2x_28> has a constant value of 0 in block <spi_96_bit_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <dist2x_27> has a constant value of 0 in block <spi_96_bit_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <dist2x_26> has a constant value of 0 in block <spi_96_bit_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <dist2x_25> has a constant value of 0 in block <spi_96_bit_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <dist2x_24> has a constant value of 0 in block <spi_96_bit_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <dist2x_23> has a constant value of 0 in block <spi_96_bit_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <dist2y_31> has a constant value of 0 in block <spi_96_bit_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <dist2y_30> has a constant value of 0 in block <spi_96_bit_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <dist2y_29> has a constant value of 0 in block <spi_96_bit_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <dist2y_28> has a constant value of 0 in block <spi_96_bit_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <dist2y_27> has a constant value of 0 in block <spi_96_bit_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <dist2y_26> has a constant value of 0 in block <spi_96_bit_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <dist2y_25> has a constant value of 0 in block <spi_96_bit_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <dist2y_24> has a constant value of 0 in block <spi_96_bit_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <dist2y_23> has a constant value of 0 in block <spi_96_bit_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <dist2_31> has a constant value of 0 in block <spi_96_bit_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <dist2_30> has a constant value of 0 in block <spi_96_bit_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <dist2_29> has a constant value of 0 in block <spi_96_bit_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <dist2_28> has a constant value of 0 in block <spi_96_bit_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <dist2_27> has a constant value of 0 in block <spi_96_bit_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <dist2_26> has a constant value of 0 in block <spi_96_bit_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <dist3_31> has a constant value of 0 in block <spi_96_bit_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <dist3x_31> has a constant value of 0 in block <spi_96_bit_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <dist3y_31> has a constant value of 0 in block <spi_96_bit_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <r_TX_Byte_0> (without init value) has a constant value of 0 in block <spi_96_bit_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <r_TX_Byte_1> (without init value) has a constant value of 0 in block <spi_96_bit_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <r_TX_Byte_2> (without init value) has a constant value of 0 in block <spi_96_bit_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <r_TX_Byte_3> (without init value) has a constant value of 0 in block <spi_96_bit_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <r_TX_Byte_4> (without init value) has a constant value of 0 in block <spi_96_bit_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <r_TX_Byte_5> (without init value) has a constant value of 0 in block <spi_96_bit_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <r_TX_Byte_6> (without init value) has a constant value of 0 in block <spi_96_bit_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <r_TX_Byte_7> (without init value) has a constant value of 0 in block <spi_96_bit_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Clock_Count_7> has a constant value of 0 in block <spi_96_bit_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Clock_Count_8> has a constant value of 0 in block <spi_96_bit_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cnty_28> (without init value) has a constant value of 0 in block <spi_96_bit_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cnty_29> (without init value) has a constant value of 0 in block <spi_96_bit_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cnty_27> (without init value) has a constant value of 0 in block <spi_96_bit_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cnty_26> (without init value) has a constant value of 0 in block <spi_96_bit_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cnty_25> (without init value) has a constant value of 0 in block <spi_96_bit_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cnty_24> (without init value) has a constant value of 0 in block <spi_96_bit_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cnty_23> (without init value) has a constant value of 0 in block <spi_96_bit_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Clock_Count_15> has a constant value of 0 in block <spi_96_bit_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Clock_Count_14> has a constant value of 0 in block <spi_96_bit_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Clock_Count_13> has a constant value of 0 in block <spi_96_bit_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Clock_Count_12> has a constant value of 0 in block <spi_96_bit_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Clock_Count_11> has a constant value of 0 in block <spi_96_bit_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Clock_Count_10> has a constant value of 0 in block <spi_96_bit_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <r_Clock_Count_9> has a constant value of 0 in block <spi_96_bit_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <dist3x_25> has a constant value of 0 in block <spi_96_bit_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <dist3x_24> has a constant value of 0 in block <spi_96_bit_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <dist3x_23> has a constant value of 0 in block <spi_96_bit_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <dist3_30> has a constant value of 0 in block <spi_96_bit_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <dist3_29> has a constant value of 0 in block <spi_96_bit_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <dist3_28> has a constant value of 0 in block <spi_96_bit_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <dist3_27> has a constant value of 0 in block <spi_96_bit_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <dist3_26> has a constant value of 0 in block <spi_96_bit_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <dist3_25> has a constant value of 0 in block <spi_96_bit_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <dist3_24> has a constant value of 0 in block <spi_96_bit_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <dist3_23> has a constant value of 0 in block <spi_96_bit_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <dist3x_26> has a constant value of 0 in block <spi_96_bit_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <dist3x_27> has a constant value of 0 in block <spi_96_bit_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <dist3x_28> has a constant value of 0 in block <spi_96_bit_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <dist3x_29> has a constant value of 0 in block <spi_96_bit_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <dist3x_30> has a constant value of 0 in block <spi_96_bit_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <dist3y_23> has a constant value of 0 in block <spi_96_bit_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <dist3y_24> has a constant value of 0 in block <spi_96_bit_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <dist3y_25> has a constant value of 0 in block <spi_96_bit_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <dist3y_26> has a constant value of 0 in block <spi_96_bit_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <dist3y_27> has a constant value of 0 in block <spi_96_bit_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <dist3y_28> has a constant value of 0 in block <spi_96_bit_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <dist3y_29> has a constant value of 0 in block <spi_96_bit_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <dist3y_30> has a constant value of 0 in block <spi_96_bit_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <r_SPI_MISO_Bit> (without init value) has a constant value of 0 in block <spi_96_bit_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <r_Preload_MISO> is unconnected in block <spi_96_bit_test>.
+INFO:Xst:2261 - The FF/Latch <cnty_0> in Unit <spi_96_bit_test> is equivalent to the following 2 FFs/Latches, which will be removed : <cnt_0> <cntx_0> 
+INFO:Xst:2261 - The FF/Latch <cnty_1> in Unit <spi_96_bit_test> is equivalent to the following 2 FFs/Latches, which will be removed : <cnt_1> <cntx_1> 
+INFO:Xst:2261 - The FF/Latch <cnty_2> in Unit <spi_96_bit_test> is equivalent to the following 2 FFs/Latches, which will be removed : <cnt_2> <cntx_2> 
+INFO:Xst:2261 - The FF/Latch <cnty_3> in Unit <spi_96_bit_test> is equivalent to the following 2 FFs/Latches, which will be removed : <cnt_3> <cntx_3> 
+INFO:Xst:2261 - The FF/Latch <cnty_4> in Unit <spi_96_bit_test> is equivalent to the following 2 FFs/Latches, which will be removed : <cnt_4> <cntx_4> 
+INFO:Xst:2261 - The FF/Latch <cnty_5> in Unit <spi_96_bit_test> is equivalent to the following 2 FFs/Latches, which will be removed : <cnt_5> <cntx_5> 
+INFO:Xst:2261 - The FF/Latch <cnty_6> in Unit <spi_96_bit_test> is equivalent to the following 2 FFs/Latches, which will be removed : <cnt_6> <cntx_6> 
+INFO:Xst:2261 - The FF/Latch <cnty_7> in Unit <spi_96_bit_test> is equivalent to the following 2 FFs/Latches, which will be removed : <cnt_7> <cntx_7> 
+INFO:Xst:2261 - The FF/Latch <cnty_8> in Unit <spi_96_bit_test> is equivalent to the following 2 FFs/Latches, which will be removed : <cnt_8> <cntx_8> 
+INFO:Xst:2261 - The FF/Latch <cnty_9> in Unit <spi_96_bit_test> is equivalent to the following 2 FFs/Latches, which will be removed : <cnt_9> <cntx_9> 
+INFO:Xst:2261 - The FF/Latch <pin2x> in Unit <spi_96_bit_test> is equivalent to the following FF/Latch, which will be removed : <distx_15> 
+INFO:Xst:2261 - The FF/Latch <pin2y> in Unit <spi_96_bit_test> is equivalent to the following FF/Latch, which will be removed : <disty_15> 
+INFO:Xst:2261 - The FF/Latch <counter1_10> in Unit <spi_96_bit_test> is equivalent to the following FF/Latch, which will be removed : <counter2_10> 
+INFO:Xst:2261 - The FF/Latch <counter1_11> in Unit <spi_96_bit_test> is equivalent to the following FF/Latch, which will be removed : <counter2_11> 
+INFO:Xst:2261 - The FF/Latch <counter1_12> in Unit <spi_96_bit_test> is equivalent to the following FF/Latch, which will be removed : <counter2_12> 
+INFO:Xst:2261 - The FF/Latch <counter1_13> in Unit <spi_96_bit_test> is equivalent to the following FF/Latch, which will be removed : <counter2_13> 
+INFO:Xst:2261 - The FF/Latch <counter1_14> in Unit <spi_96_bit_test> is equivalent to the following FF/Latch, which will be removed : <counter2_14> 
+INFO:Xst:2261 - The FF/Latch <counter1_15> in Unit <spi_96_bit_test> is equivalent to the following FF/Latch, which will be removed : <counter2_15> 
+INFO:Xst:2261 - The FF/Latch <pin2> in Unit <spi_96_bit_test> is equivalent to the following FF/Latch, which will be removed : <dist_15> 
+INFO:Xst:2261 - The FF/Latch <counter1_20> in Unit <spi_96_bit_test> is equivalent to the following FF/Latch, which will be removed : <counter2_20> 
+INFO:Xst:2261 - The FF/Latch <counter1_16> in Unit <spi_96_bit_test> is equivalent to the following FF/Latch, which will be removed : <counter2_16> 
+INFO:Xst:2261 - The FF/Latch <counter1_21> in Unit <spi_96_bit_test> is equivalent to the following FF/Latch, which will be removed : <counter2_21> 
+INFO:Xst:2261 - The FF/Latch <counter1_17> in Unit <spi_96_bit_test> is equivalent to the following FF/Latch, which will be removed : <counter2_17> 
+INFO:Xst:2261 - The FF/Latch <counter1_22> in Unit <spi_96_bit_test> is equivalent to the following FF/Latch, which will be removed : <counter2_22> 
+INFO:Xst:2261 - The FF/Latch <counter1_18> in Unit <spi_96_bit_test> is equivalent to the following FF/Latch, which will be removed : <counter2_18> 
+INFO:Xst:2261 - The FF/Latch <counter1_23> in Unit <spi_96_bit_test> is equivalent to the following FF/Latch, which will be removed : <counter2_23> 
+INFO:Xst:2261 - The FF/Latch <counter1_19> in Unit <spi_96_bit_test> is equivalent to the following FF/Latch, which will be removed : <counter2_19> 
+INFO:Xst:2261 - The FF/Latch <cnty_10> in Unit <spi_96_bit_test> is equivalent to the following 2 FFs/Latches, which will be removed : <cnt_10> <cntx_10> 
+INFO:Xst:2261 - The FF/Latch <cnty_11> in Unit <spi_96_bit_test> is equivalent to the following 2 FFs/Latches, which will be removed : <cnt_11> <cntx_11> 
+INFO:Xst:2261 - The FF/Latch <cnty_12> in Unit <spi_96_bit_test> is equivalent to the following 2 FFs/Latches, which will be removed : <cnt_12> <cntx_12> 
+INFO:Xst:2261 - The FF/Latch <cnty_13> in Unit <spi_96_bit_test> is equivalent to the following 2 FFs/Latches, which will be removed : <cnt_13> <cntx_13> 
+INFO:Xst:2261 - The FF/Latch <cnty_14> in Unit <spi_96_bit_test> is equivalent to the following 2 FFs/Latches, which will be removed : <cnt_14> <cntx_14> 
+INFO:Xst:2261 - The FF/Latch <cnty_15> in Unit <spi_96_bit_test> is equivalent to the following 2 FFs/Latches, which will be removed : <cnt_15> <cntx_15> 
+INFO:Xst:2261 - The FF/Latch <cnty_20> in Unit <spi_96_bit_test> is equivalent to the following 2 FFs/Latches, which will be removed : <cnt_20> <cntx_20> 
+INFO:Xst:2261 - The FF/Latch <cnty_16> in Unit <spi_96_bit_test> is equivalent to the following 2 FFs/Latches, which will be removed : <cnt_16> <cntx_16> 
+INFO:Xst:2261 - The FF/Latch <cnty_21> in Unit <spi_96_bit_test> is equivalent to the following 2 FFs/Latches, which will be removed : <cnt_21> <cntx_21> 
+INFO:Xst:2261 - The FF/Latch <cnty_17> in Unit <spi_96_bit_test> is equivalent to the following 2 FFs/Latches, which will be removed : <cnt_17> <cntx_17> 
+INFO:Xst:2261 - The FF/Latch <cnty_22> in Unit <spi_96_bit_test> is equivalent to the following 2 FFs/Latches, which will be removed : <cnt_22> <cntx_22> 
+INFO:Xst:2261 - The FF/Latch <cnty_18> in Unit <spi_96_bit_test> is equivalent to the following 2 FFs/Latches, which will be removed : <cnt_18> <cntx_18> 
+INFO:Xst:2261 - The FF/Latch <cnty_19> in Unit <spi_96_bit_test> is equivalent to the following 2 FFs/Latches, which will be removed : <cnt_19> <cntx_19> 
+INFO:Xst:2261 - The FF/Latch <counter1_0> in Unit <spi_96_bit_test> is equivalent to the following FF/Latch, which will be removed : <counter2_0> 
+INFO:Xst:2261 - The FF/Latch <counter1_1> in Unit <spi_96_bit_test> is equivalent to the following FF/Latch, which will be removed : <counter2_1> 
+INFO:Xst:2261 - The FF/Latch <counter1_2> in Unit <spi_96_bit_test> is equivalent to the following FF/Latch, which will be removed : <counter2_2> 
+INFO:Xst:2261 - The FF/Latch <counter1_3> in Unit <spi_96_bit_test> is equivalent to the following FF/Latch, which will be removed : <counter2_3> 
+INFO:Xst:2261 - The FF/Latch <counter1_4> in Unit <spi_96_bit_test> is equivalent to the following FF/Latch, which will be removed : <counter2_4> 
+INFO:Xst:2261 - The FF/Latch <counter1_5> in Unit <spi_96_bit_test> is equivalent to the following FF/Latch, which will be removed : <counter2_5> 
+INFO:Xst:2261 - The FF/Latch <counter1_6> in Unit <spi_96_bit_test> is equivalent to the following FF/Latch, which will be removed : <counter2_6> 
+INFO:Xst:2261 - The FF/Latch <counter1_7> in Unit <spi_96_bit_test> is equivalent to the following FF/Latch, which will be removed : <counter2_7> 
+INFO:Xst:2261 - The FF/Latch <counter1_8> in Unit <spi_96_bit_test> is equivalent to the following FF/Latch, which will be removed : <counter2_8> 
+INFO:Xst:2261 - The FF/Latch <counter1_9> in Unit <spi_96_bit_test> is equivalent to the following FF/Latch, which will be removed : <counter2_9> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block spi_96_bit_test, actual ratio is 76.
+FlipFlop int_rpm_0 has been replicated 3 time(s)
+FlipFlop int_rpm_1 has been replicated 3 time(s)
+FlipFlop int_rpm_10 has been replicated 2 time(s)
+FlipFlop int_rpm_11 has been replicated 2 time(s)
+FlipFlop int_rpm_12 has been replicated 2 time(s)
+FlipFlop int_rpm_13 has been replicated 2 time(s)
+FlipFlop int_rpm_14 has been replicated 2 time(s)
+FlipFlop int_rpm_15 has been replicated 2 time(s)
+FlipFlop int_rpm_16 has been replicated 2 time(s)
+FlipFlop int_rpm_17 has been replicated 2 time(s)
+FlipFlop int_rpm_18 has been replicated 2 time(s)
+FlipFlop int_rpm_19 has been replicated 2 time(s)
+FlipFlop int_rpm_2 has been replicated 2 time(s)
+FlipFlop int_rpm_20 has been replicated 2 time(s)
+FlipFlop int_rpm_21 has been replicated 2 time(s)
+FlipFlop int_rpm_22 has been replicated 2 time(s)
+FlipFlop int_rpm_23 has been replicated 2 time(s)
+FlipFlop int_rpm_3 has been replicated 2 time(s)
+FlipFlop int_rpm_4 has been replicated 2 time(s)
+FlipFlop int_rpm_5 has been replicated 2 time(s)
+FlipFlop int_rpm_6 has been replicated 2 time(s)
+FlipFlop int_rpm_7 has been replicated 2 time(s)
+FlipFlop int_rpm_8 has been replicated 2 time(s)
+FlipFlop int_rpm_9 has been replicated 2 time(s)
+FlipFlop int_rpmx_0 has been replicated 3 time(s)
+FlipFlop int_rpmx_1 has been replicated 3 time(s)
+FlipFlop int_rpmx_10 has been replicated 2 time(s)
+FlipFlop int_rpmx_11 has been replicated 2 time(s)
+FlipFlop int_rpmx_12 has been replicated 2 time(s)
+FlipFlop int_rpmx_13 has been replicated 2 time(s)
+FlipFlop int_rpmx_14 has been replicated 2 time(s)
+FlipFlop int_rpmx_15 has been replicated 2 time(s)
+FlipFlop int_rpmx_16 has been replicated 2 time(s)
+FlipFlop int_rpmx_17 has been replicated 2 time(s)
+FlipFlop int_rpmx_18 has been replicated 2 time(s)
+FlipFlop int_rpmx_19 has been replicated 2 time(s)
+FlipFlop int_rpmx_2 has been replicated 2 time(s)
+FlipFlop int_rpmx_20 has been replicated 2 time(s)
+FlipFlop int_rpmx_21 has been replicated 2 time(s)
+FlipFlop int_rpmx_22 has been replicated 2 time(s)
+FlipFlop int_rpmx_23 has been replicated 2 time(s)
+FlipFlop int_rpmx_3 has been replicated 2 time(s)
+FlipFlop int_rpmx_4 has been replicated 2 time(s)
+FlipFlop int_rpmx_5 has been replicated 2 time(s)
+FlipFlop int_rpmx_6 has been replicated 2 time(s)
+FlipFlop int_rpmx_7 has been replicated 2 time(s)
+FlipFlop int_rpmx_8 has been replicated 2 time(s)
+FlipFlop int_rpmx_9 has been replicated 2 time(s)
+FlipFlop int_rpmy_0 has been replicated 3 time(s)
+FlipFlop int_rpmy_1 has been replicated 3 time(s)
+FlipFlop int_rpmy_10 has been replicated 2 time(s)
+FlipFlop int_rpmy_11 has been replicated 2 time(s)
+FlipFlop int_rpmy_12 has been replicated 2 time(s)
+FlipFlop int_rpmy_13 has been replicated 2 time(s)
+FlipFlop int_rpmy_14 has been replicated 2 time(s)
+FlipFlop int_rpmy_15 has been replicated 2 time(s)
+FlipFlop int_rpmy_16 has been replicated 2 time(s)
+FlipFlop int_rpmy_17 has been replicated 2 time(s)
+FlipFlop int_rpmy_18 has been replicated 2 time(s)
+FlipFlop int_rpmy_19 has been replicated 2 time(s)
+FlipFlop int_rpmy_2 has been replicated 2 time(s)
+FlipFlop int_rpmy_20 has been replicated 2 time(s)
+FlipFlop int_rpmy_21 has been replicated 2 time(s)
+FlipFlop int_rpmy_22 has been replicated 2 time(s)
+FlipFlop int_rpmy_23 has been replicated 2 time(s)
+FlipFlop int_rpmy_3 has been replicated 2 time(s)
+FlipFlop int_rpmy_4 has been replicated 2 time(s)
+FlipFlop int_rpmy_5 has been replicated 2 time(s)
+FlipFlop int_rpmy_6 has been replicated 2 time(s)
+FlipFlop int_rpmy_7 has been replicated 2 time(s)
+FlipFlop int_rpmy_8 has been replicated 2 time(s)
+FlipFlop int_rpmy_9 has been replicated 2 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 976
+ Flip-Flops                                            : 976
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : spi_96_bit_test.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 6558
+#      GND                         : 1
+#      INV                         : 106
+#      LUT1                        : 239
+#      LUT2                        : 171
+#      LUT3                        : 329
+#      LUT4                        : 1144
+#      LUT5                        : 734
+#      LUT6                        : 869
+#      MUXCY                       : 1855
+#      MUXF7                       : 1
+#      VCC                         : 1
+#      XORCY                       : 1108
+# FlipFlops/Latches                : 976
+#      FD                          : 137
+#      FDC                         : 13
+#      FDCE                        : 202
+#      FDE                         : 457
+#      FDP                         : 3
+#      FDR                         : 26
+#      FDRE                        : 138
+# Clock Buffers                    : 2
+#      BUFGP                       : 2
+# IO Buffers                       : 30
+#      IBUF                        : 7
+#      OBUF                        : 22
+#      OBUFT                       : 1
+# DSPs                             : 3
+#      DSP48A1                     : 3
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9tqg144-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             976  out of  11440     8%  
+ Number of Slice LUTs:                 3592  out of   5720    62%  
+    Number used as Logic:              3592  out of   5720    62%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   4351
+   Number with an unused Flip Flop:    3375  out of   4351    77%  
+   Number with an unused LUT:           759  out of   4351    17%  
+   Number of fully used LUT-FF pairs:   217  out of   4351     4%  
+   Number of unique control sets:        53
+
+IO Utilization: 
+ Number of IOs:                          33
+ Number of bonded IOBs:                  32  out of    102    31%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                2  out of     16    12%  
+ Number of DSP48A1s:                      3  out of     16    18%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+i_Clk                              | BUFGP                  | 957   |
+i_SPI_Clk                          | BUFGP                  | 22    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 80.732ns (Maximum Frequency: 12.387MHz)
+   Minimum input arrival time before clock: 11.526ns
+   Maximum output required time after clock: 4.162ns
+   Maximum combinational path delay: 5.247ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'i_Clk'
+  Clock period: 80.732ns (frequency: 12.387MHz)
+  Total number of paths / destination ports: 11319875524432137000000000000000 / 1841
+-------------------------------------------------------------------------
+Delay:               80.732ns (Levels of Logic = 218)
+  Source:            int_rpmx_1_1 (FF)
+  Destination:       storex_0 (FF)
+  Source Clock:      i_Clk rising
+  Destination Clock: i_Clk rising
+
+  Data Path: int_rpmx_1_1 to storex_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              2   0.525   1.156  int_rpmx_1_1 (int_rpmx_1_1)
+     LUT5:I0->O            1   0.254   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<21>_lut<0> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<21>_lut<0>)
+     MUXCY:S->O            1   0.215   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<21>_cy<0> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<21>_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<21>_cy<1> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<21>_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<21>_cy<2> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<21>_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<21>_cy<3> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<21>_cy<3>)
+     MUXCY:CI->O           3   0.262   0.766  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<21>_cy<4> (PWR_1_o_int_rpmx[23]_div_264_OUT<21>)
+     LUT2:I1->O            2   0.254   1.002  PWR_1_o_int_rpmx[23]_div_264/Mmux_a[21]_GND_2_o_MUX_285_o11 (PWR_1_o_int_rpmx[23]_div_264/a[21]_GND_2_o_MUX_285_o)
+     LUT5:I1->O            0   0.254   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<20>_lutdi (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<20>_lutdi)
+     MUXCY:DI->O           1   0.181   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<20>_cy<0> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<20>_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<20>_cy<1> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<20>_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<20>_cy<2> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<20>_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<20>_cy<3> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<20>_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<20>_cy<4> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<20>_cy<4>)
+     MUXCY:CI->O          10   0.262   1.008  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<20>_cy<5> (PWR_1_o_int_rpmx[23]_div_264_OUT<20>)
+     LUT2:I1->O            2   0.254   1.002  PWR_1_o_int_rpmx[23]_div_264/Mmux_a[20]_GND_2_o_MUX_374_o11 (PWR_1_o_int_rpmx[23]_div_264/a[20]_GND_2_o_MUX_374_o)
+     LUT4:I0->O            0   0.254   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<19>_lutdi (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<19>_lutdi)
+     MUXCY:DI->O           1   0.181   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<19>_cy<0> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<19>_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<19>_cy<1> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<19>_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<19>_cy<2> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<19>_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<19>_cy<3> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<19>_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<19>_cy<4> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<19>_cy<4>)
+     MUXCY:CI->O          15   0.262   1.155  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<19>_cy<5> (PWR_1_o_int_rpmx[23]_div_264_OUT<19>)
+     LUT4:I3->O            4   0.254   1.080  PWR_1_o_int_rpmx[23]_div_264/Mmux_a[20]_GND_2_o_MUX_460_o11 (PWR_1_o_int_rpmx[23]_div_264/a[20]_GND_2_o_MUX_460_o)
+     LUT5:I1->O            1   0.254   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<18>_lut<1> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<18>_lut<1>)
+     MUXCY:S->O            1   0.215   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<18>_cy<1> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<18>_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<18>_cy<2> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<18>_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<18>_cy<3> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<18>_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<18>_cy<4> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<18>_cy<4>)
+     MUXCY:CI->O          15   0.262   1.155  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<18>_cy<5> (PWR_1_o_int_rpmx[23]_div_264_OUT<18>)
+     LUT6:I5->O            4   0.254   1.080  PWR_1_o_int_rpmx[23]_div_264/Mmux_a[20]_GND_2_o_MUX_544_o11 (PWR_1_o_int_rpmx[23]_div_264/a[20]_GND_2_o_MUX_544_o)
+     LUT4:I0->O            0   0.254   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<17>_lutdi1 (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<17>_lutdi1)
+     MUXCY:DI->O           1   0.181   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<17>_cy<1> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<17>_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<17>_cy<2> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<17>_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<17>_cy<3> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<17>_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<17>_cy<4> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<17>_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<17>_cy<5> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<17>_cy<5>)
+     MUXCY:CI->O          17   0.262   1.209  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<17>_cy<6> (PWR_1_o_int_rpmx[23]_div_264_OUT<17>)
+     LUT6:I5->O            6   0.254   1.152  PWR_1_o_int_rpmx[23]_div_264/Mmux_a[20]_GND_2_o_MUX_626_o11 (PWR_1_o_int_rpmx[23]_div_264/a[20]_GND_2_o_MUX_626_o)
+     LUT5:I1->O            1   0.254   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<16>_lut<2> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<16>_lut<2>)
+     MUXCY:S->O            1   0.215   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<16>_cy<2> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<16>_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<16>_cy<3> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<16>_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<16>_cy<4> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<16>_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<16>_cy<5> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<16>_cy<5>)
+     MUXCY:CI->O          25   0.262   1.403  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<16>_cy<6> (PWR_1_o_int_rpmx[23]_div_264_OUT<16>)
+     LUT2:I1->O            3   0.254   1.042  PWR_1_o_int_rpmx[23]_div_264/Mmux_a[16]_GND_2_o_MUX_710_o11 (PWR_1_o_int_rpmx[23]_div_264/a[16]_GND_2_o_MUX_710_o)
+     LUT4:I0->O            0   0.254   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<15>_lutdi (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<15>_lutdi)
+     MUXCY:DI->O           1   0.181   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<15>_cy<0> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<15>_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<15>_cy<1> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<15>_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<15>_cy<2> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<15>_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<15>_cy<3> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<15>_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<15>_cy<4> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<15>_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<15>_cy<5> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<15>_cy<5>)
+     MUXCY:CI->O          26   0.262   1.420  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<15>_cy<6> (PWR_1_o_int_rpmx[23]_div_264_OUT<15>)
+     LUT6:I5->O            5   0.254   1.117  PWR_1_o_int_rpmx[23]_div_264/Mmux_a[17]_GND_2_o_MUX_787_o11 (PWR_1_o_int_rpmx[23]_div_264/a[17]_GND_2_o_MUX_787_o)
+     LUT4:I0->O            0   0.254   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<14>_lutdi1 (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<14>_lutdi1)
+     MUXCY:DI->O           1   0.181   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<14>_cy<1> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<14>_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<14>_cy<2> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<14>_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<14>_cy<3> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<14>_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<14>_cy<4> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<14>_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<14>_cy<5> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<14>_cy<5>)
+     MUXCY:CI->O          33   0.262   1.537  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<14>_cy<6> (PWR_1_o_int_rpmx[23]_div_264_OUT<14>)
+     LUT2:I1->O            3   0.254   1.042  PWR_1_o_int_rpmx[23]_div_264/Mmux_a[14]_GND_2_o_MUX_866_o11 (PWR_1_o_int_rpmx[23]_div_264/a[14]_GND_2_o_MUX_866_o)
+     LUT4:I0->O            0   0.254   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<13>_lutdi (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<13>_lutdi)
+     MUXCY:DI->O           1   0.181   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<13>_cy<0> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<13>_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<13>_cy<1> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<13>_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<13>_cy<2> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<13>_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<13>_cy<3> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<13>_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<13>_cy<4> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<13>_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<13>_cy<5> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<13>_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<13>_cy<6> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<13>_cy<6>)
+     MUXCY:CI->O          32   0.262   1.520  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<13>_cy<7> (PWR_1_o_int_rpmx[23]_div_264_OUT<13>)
+     LUT6:I5->O            5   0.254   1.117  PWR_1_o_int_rpmx[23]_div_264/Mmux_a[15]_GND_2_o_MUX_939_o11 (PWR_1_o_int_rpmx[23]_div_264/a[15]_GND_2_o_MUX_939_o)
+     LUT4:I0->O            0   0.254   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<12>_lutdi1 (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<12>_lutdi1)
+     MUXCY:DI->O           1   0.181   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<12>_cy<1> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<12>_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<12>_cy<2> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<12>_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<12>_cy<3> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<12>_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<12>_cy<4> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<12>_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<12>_cy<5> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<12>_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<12>_cy<6> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<12>_cy<6>)
+     MUXCY:CI->O          41   0.262   1.671  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<12>_cy<7> (PWR_1_o_int_rpmx[23]_div_264_OUT<12>)
+     LUT2:I1->O            3   0.254   1.042  PWR_1_o_int_rpmx[23]_div_264/Mmux_a[12]_GND_2_o_MUX_1014_o11 (PWR_1_o_int_rpmx[23]_div_264/a[12]_GND_2_o_MUX_1014_o)
+     LUT4:I0->O            0   0.254   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<11>_lutdi (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<11>_lutdi)
+     MUXCY:DI->O           1   0.181   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<11>_cy<0> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<11>_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<11>_cy<1> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<11>_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<11>_cy<2> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<11>_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<11>_cy<3> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<11>_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<11>_cy<4> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<11>_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<11>_cy<5> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<11>_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<11>_cy<6> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<11>_cy<6>)
+     MUXCY:CI->O          38   0.262   1.620  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<11>_cy<7> (PWR_1_o_int_rpmx[23]_div_264_OUT<11>)
+     LUT6:I5->O            5   0.254   1.117  PWR_1_o_int_rpmx[23]_div_264/Mmux_a[13]_GND_2_o_MUX_1083_o11 (PWR_1_o_int_rpmx[23]_div_264/a[13]_GND_2_o_MUX_1083_o)
+     LUT4:I0->O            0   0.254   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<10>_lutdi1 (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<10>_lutdi1)
+     MUXCY:DI->O           1   0.181   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<10>_cy<1> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<10>_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<10>_cy<2> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<10>_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<10>_cy<3> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<10>_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<10>_cy<4> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<10>_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<10>_cy<5> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<10>_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<10>_cy<6> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<10>_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<10>_cy<7> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<10>_cy<7>)
+     MUXCY:CI->O          49   0.262   1.804  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<10>_cy<8> (PWR_1_o_int_rpmx[23]_div_264_OUT<10>)
+     LUT2:I1->O            3   0.254   1.042  PWR_1_o_int_rpmx[23]_div_264/Mmux_a[10]_GND_2_o_MUX_1154_o11 (PWR_1_o_int_rpmx[23]_div_264/a[10]_GND_2_o_MUX_1154_o)
+     LUT4:I0->O            0   0.254   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<9>_lutdi (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<9>_lutdi)
+     MUXCY:DI->O           1   0.181   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<9>_cy<0> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<9>_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<9>_cy<1> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<9>_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<9>_cy<2> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<9>_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<9>_cy<3> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<9>_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<9>_cy<4> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<9>_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<9>_cy<5> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<9>_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<9>_cy<6> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<9>_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<9>_cy<7> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<9>_cy<7>)
+     MUXCY:CI->O          44   0.262   1.721  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<9>_cy<8> (PWR_1_o_int_rpmx[23]_div_264_OUT<9>)
+     LUT6:I5->O            5   0.254   1.117  PWR_1_o_int_rpmx[23]_div_264/Mmux_a[11]_GND_2_o_MUX_1219_o11 (PWR_1_o_int_rpmx[23]_div_264/a[11]_GND_2_o_MUX_1219_o)
+     LUT4:I0->O            0   0.254   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<8>_lutdi1 (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<8>_lutdi1)
+     MUXCY:DI->O           1   0.181   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<8>_cy<1> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<8>_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<8>_cy<2> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<8>_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<8>_cy<3> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<8>_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<8>_cy<4> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<8>_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<8>_cy<5> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<8>_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<8>_cy<6> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<8>_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<8>_cy<7> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<8>_cy<7>)
+     MUXCY:CI->O          57   0.262   1.875  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<8>_cy<8> (PWR_1_o_int_rpmx[23]_div_264_OUT<8>)
+     LUT2:I1->O            3   0.254   1.042  PWR_1_o_int_rpmx[23]_div_264/Mmux_a[8]_GND_2_o_MUX_1286_o11 (PWR_1_o_int_rpmx[23]_div_264/a[8]_GND_2_o_MUX_1286_o)
+     LUT4:I0->O            0   0.254   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<7>_lutdi (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<7>_lutdi)
+     MUXCY:DI->O           1   0.181   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<7>_cy<0> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<7>_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<7>_cy<1> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<7>_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<7>_cy<2> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<7>_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<7>_cy<3> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<7>_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<7>_cy<4> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<7>_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<7>_cy<5> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<7>_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<7>_cy<6> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<7>_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<7>_cy<7> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<7>_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<7>_cy<8> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<7>_cy<8>)
+     MUXCY:CI->O          50   0.262   1.821  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<7>_cy<9> (PWR_1_o_int_rpmx[23]_div_264_OUT<7>)
+     LUT6:I5->O            5   0.254   1.117  PWR_1_o_int_rpmx[23]_div_264/Mmux_a[9]_GND_2_o_MUX_1347_o11 (PWR_1_o_int_rpmx[23]_div_264/a[9]_GND_2_o_MUX_1347_o)
+     LUT4:I0->O            0   0.254   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<6>_lutdi1 (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<6>_lutdi1)
+     MUXCY:DI->O           1   0.181   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<6>_cy<1> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<6>_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<6>_cy<2> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<6>_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<6>_cy<3> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<6>_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<6>_cy<4> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<6>_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<6>_cy<5> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<6>_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<6>_cy<6> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<6>_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<6>_cy<7> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<6>_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<6>_cy<8> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<6>_cy<8>)
+     MUXCY:CI->O          65   0.262   1.937  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<6>_cy<9> (PWR_1_o_int_rpmx[23]_div_264_OUT<6>)
+     LUT2:I1->O            3   0.254   1.042  PWR_1_o_int_rpmx[23]_div_264/Mmux_a[6]_GND_2_o_MUX_1410_o11 (PWR_1_o_int_rpmx[23]_div_264/a[6]_GND_2_o_MUX_1410_o)
+     LUT4:I0->O            0   0.254   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<5>_lutdi (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<5>_lutdi)
+     MUXCY:DI->O           1   0.181   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<5>_cy<0> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<5>_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<5>_cy<1> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<5>_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<5>_cy<2> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<5>_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<5>_cy<3> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<5>_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<5>_cy<4> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<5>_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<5>_cy<5> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<5>_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<5>_cy<6> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<5>_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<5>_cy<7> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<5>_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<5>_cy<8> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<5>_cy<8>)
+     MUXCY:CI->O          56   0.262   1.868  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<5>_cy<9> (PWR_1_o_int_rpmx[23]_div_264_OUT<5>)
+     LUT6:I5->O            5   0.254   1.117  PWR_1_o_int_rpmx[23]_div_264/Mmux_a[7]_GND_2_o_MUX_1467_o11 (PWR_1_o_int_rpmx[23]_div_264/a[7]_GND_2_o_MUX_1467_o)
+     LUT4:I0->O            0   0.254   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<4>_lutdi1 (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<4>_lutdi1)
+     MUXCY:DI->O           1   0.181   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<4>_cy<1> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<4>_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<4>_cy<2> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<4>_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<4>_cy<3> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<4>_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<4>_cy<4> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<4>_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<4>_cy<5> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<4>_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<4>_cy<6> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<4>_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<4>_cy<7> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<4>_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<4>_cy<8> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<4>_cy<8>)
+     MUXCY:CI->O          74   0.262   2.007  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<4>_cy<9> (PWR_1_o_int_rpmx[23]_div_264_OUT<4>)
+     LUT6:I5->O            4   0.254   1.080  PWR_1_o_int_rpmx[23]_div_264/Mmux_a[6]_GND_2_o_MUX_1524_o11 (PWR_1_o_int_rpmx[23]_div_264/a[6]_GND_2_o_MUX_1524_o)
+     LUT4:I0->O            0   0.254   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<3>_lutdi1 (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<3>_lutdi1)
+     MUXCY:DI->O           1   0.181   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<3>_cy<1> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<3>_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<3>_cy<2> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<3>_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<3>_cy<3> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<3>_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<3>_cy<4> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<3>_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<3>_cy<5> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<3>_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<3>_cy<6> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<3>_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<3>_cy<7> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<3>_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<3>_cy<8> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<3>_cy<8>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<3>_cy<9> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<3>_cy<9>)
+     MUXCY:CI->O          76   0.262   2.023  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<3>_cy<10> (PWR_1_o_int_rpmx[23]_div_264_OUT<3>)
+     LUT6:I5->O            3   0.254   1.042  PWR_1_o_int_rpmx[23]_div_264/Mmux_a[5]_GND_2_o_MUX_1579_o11 (PWR_1_o_int_rpmx[23]_div_264/a[5]_GND_2_o_MUX_1579_o)
+     LUT4:I0->O            0   0.254   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<2>_lutdi1 (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<2>_lutdi1)
+     MUXCY:DI->O           1   0.181   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<2>_cy<1> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<2>_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<2>_cy<2> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<2>_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<2>_cy<3> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<2>_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<2>_cy<4> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<2>_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<2>_cy<5> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<2>_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<2>_cy<6> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<2>_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<2>_cy<7> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<2>_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<2>_cy<8> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<2>_cy<8>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<2>_cy<9> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<2>_cy<9>)
+     MUXCY:CI->O          61   0.262   1.906  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<2>_cy<10> (PWR_1_o_int_rpmx[23]_div_264_OUT<2>)
+     LUT2:I1->O            2   0.254   1.002  PWR_1_o_int_rpmx[23]_div_264/Mmux_a[2]_GND_2_o_MUX_1634_o11 (PWR_1_o_int_rpmx[23]_div_264/a[2]_GND_2_o_MUX_1634_o)
+     LUT4:I0->O            0   0.254   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<1>_lutdi (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<1>_lutdi)
+     MUXCY:DI->O           1   0.181   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<1>_cy<0> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<1>_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<1>_cy<1> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<1>_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<1>_cy<2> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<1>_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<1>_cy<3> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<1>_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<1>_cy<4> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<1>_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<1>_cy<5> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<1>_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<1>_cy<6> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<1>_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<1>_cy<7> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<1>_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<1>_cy<8> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<1>_cy<8>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<1>_cy<9> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<1>_cy<9>)
+     MUXCY:CI->O          22   0.262   1.334  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<1>_cy<10> (PWR_1_o_int_rpmx[23]_div_264_OUT<1>)
+     LUT2:I1->O            2   0.254   1.002  PWR_1_o_int_rpmx[23]_div_264/Mmux_a[1]_GND_2_o_MUX_1685_o11 (PWR_1_o_int_rpmx[23]_div_264/a[1]_GND_2_o_MUX_1685_o)
+     LUT4:I0->O            0   0.254   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<0>_lutdi (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<0>_lutdi)
+     MUXCY:DI->O           1   0.181   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<0>_cy<0> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<0>_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<0>_cy<1> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<0>_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<0>_cy<2> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<0>_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<0>_cy<3> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<0>_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<0>_cy<4> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<0>_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<0>_cy<5> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<0>_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<0>_cy<6> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<0>_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<0>_cy<7> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<0>_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<0>_cy<8> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<0>_cy<8>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<0>_cy<9> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<0>_cy<9>)
+     MUXCY:CI->O           1   0.023   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<0>_cy<10> (PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<0>_cy<10>)
+     MUXCY:CI->O           1   0.262   0.000  PWR_1_o_int_rpmx[23]_div_264/Mcompar_o<0>_cy<11> (PWR_1_o_int_rpmx[23]_div_264_OUT<0>)
+     FD:D                      0.074          storex_0
+    ----------------------------------------
+    Total                     80.732ns (24.420ns logic, 56.312ns route)
+                                       (30.2% logic, 69.8% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'i_SPI_Clk'
+  Clock period: 3.104ns (frequency: 322.165MHz)
+  Total number of paths / destination ports: 55 / 29
+-------------------------------------------------------------------------
+Delay:               3.104ns (Levels of Logic = 1)
+  Source:            r_RX_Bit_Count_2 (FF)
+  Destination:       r_RX_Byte_0 (FF)
+  Source Clock:      i_SPI_Clk rising
+  Destination Clock: i_SPI_Clk rising
+
+  Data Path: r_RX_Bit_Count_2 to r_RX_Byte_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              4   0.525   1.080  r_RX_Bit_Count_2 (r_RX_Bit_Count_2)
+     LUT4:I0->O            8   0.254   0.943  _n1227_inv1 (_n1227_inv)
+     FDE:CE                    0.302          r_RX_Byte_0
+    ----------------------------------------
+    Total                      3.104ns (1.081ns logic, 2.023ns route)
+                                       (34.8% logic, 65.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'i_Clk'
+  Total number of paths / destination ports: 9803 / 919
+-------------------------------------------------------------------------
+Offset:              11.526ns (Levels of Logic = 8)
+  Source:            i_Tx_DV (PAD)
+  Destination:       r_Tx_Active (FF)
+  Destination Clock: i_Clk rising
+
+  Data Path: i_Tx_DV to r_Tx_Active
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            33   1.328   1.992  i_Tx_DV_IBUF (i_Tx_DV_IBUF)
+     LUT6:I0->O            1   0.254   0.958  r_SM_Main_FSM_FFd3-In22_SW0 (N55)
+     LUT6:I2->O            2   0.254   0.726  r_SM_Main_FSM_FFd3-In22 (r_SM_Main_FSM_FFd3-In22)
+     LUT4:I3->O            1   0.254   0.682  r_SM_Main_FSM_FFd3-In23_SW0_SW0 (N61)
+     LUT6:I5->O            1   0.254   1.137  r_SM_Main_FSM_FFd3-In23_SW0 (N57)
+     LUT6:I0->O            1   0.254   0.790  r_SM_Main_FSM_FFd3-In23 (r_SM_Main_FSM_FFd3-In23)
+     LUT6:I4->O            2   0.250   1.156  r_SM_Main_FSM_FFd3-In24 (r_SM_Main_FSM_FFd3-In2)
+     LUT5:I0->O            1   0.254   0.681  _n1073_inv1 (_n1073_inv)
+     FDE:CE                    0.302          r_Tx_Active
+    ----------------------------------------
+    Total                     11.526ns (3.404ns logic, 8.122ns route)
+                                       (29.5% logic, 70.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'i_SPI_Clk'
+  Total number of paths / destination ports: 24 / 24
+-------------------------------------------------------------------------
+Offset:              4.044ns (Levels of Logic = 2)
+  Source:            i_SPI_CS_n (PAD)
+  Destination:       r_RX_Byte_0 (FF)
+  Destination Clock: i_SPI_Clk rising
+
+  Data Path: i_SPI_CS_n to r_RX_Byte_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            10   1.328   1.236  i_SPI_CS_n_IBUF (i_SPI_CS_n_IBUF)
+     LUT4:I1->O            8   0.235   0.943  _n1227_inv1 (_n1227_inv)
+     FDE:CE                    0.302          r_RX_Byte_0
+    ----------------------------------------
+    Total                      4.044ns (1.865ns logic, 2.179ns route)
+                                       (46.1% logic, 53.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'i_Clk'
+  Total number of paths / destination ports: 22 / 22
+-------------------------------------------------------------------------
+Offset:              4.162ns (Levels of Logic = 1)
+  Source:            pin2 (FF)
+  Destination:       pin2 (PAD)
+  Source Clock:      i_Clk rising
+
+  Data Path: pin2 to pin2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              2   0.525   0.725  pin2 (dist<15>)
+     OBUF:I->O                 2.912          pin2_OBUF (pin2)
+    ----------------------------------------
+    Total                      4.162ns (3.437ns logic, 0.725ns route)
+                                       (82.6% logic, 17.4% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               5.247ns (Levels of Logic = 2)
+  Source:            i_SPI_CS_n (PAD)
+  Destination:       o_SPI_MISO (PAD)
+
+  Data Path: i_SPI_CS_n to o_SPI_MISO
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            10   1.328   1.007  i_SPI_CS_n_IBUF (i_SPI_CS_n_IBUF)
+     OBUFT:T->O                2.912          o_SPI_MISO_OBUFT (o_SPI_MISO)
+    ----------------------------------------
+    Total                      5.247ns (4.240ns logic, 1.007ns route)
+                                       (80.8% logic, 19.2% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock i_Clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+i_Clk          |   80.732|         |         |         |
+i_SPI_Clk      |    1.903|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock i_SPI_Clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+i_SPI_Clk      |    3.104|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 27.00 secs
+Total CPU time to Xst completion: 26.63 secs
+ 
+--> 
+
+Total memory usage is 4523652 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  139 (   0 filtered)
+Number of infos    :   51 (   0 filtered)
+

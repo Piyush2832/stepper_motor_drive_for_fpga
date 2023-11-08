@@ -1,0 +1,39 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Wed Oct 11 16:15:02 2023
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "dead_endx" LOCATE = SITE "P82" LEVEL 1;
+COMP "dead_endy" LOCATE = SITE "P83" LEVEL 1;
+COMP "o_SPI_MISO" LOCATE = SITE "P21" LEVEL 1;
+COMP "i_Rst_L" LOCATE = SITE "P80" LEVEL 1;
+COMP "gpio_pin" LOCATE = SITE "P142" LEVEL 1;
+COMP "i_Clk" LOCATE = SITE "P87" LEVEL 1;
+COMP "out1<0>" LOCATE = SITE "P16" LEVEL 1;
+COMP "out1<1>" LOCATE = SITE "P15" LEVEL 1;
+COMP "pin1x" LOCATE = SITE "P41" LEVEL 1;
+COMP "out1<2>" LOCATE = SITE "P12" LEVEL 1;
+COMP "out1<3>" LOCATE = SITE "P11" LEVEL 1;
+COMP "out1<4>" LOCATE = SITE "P9" LEVEL 1;
+COMP "out1<5>" LOCATE = SITE "P8" LEVEL 1;
+COMP "out1<6>" LOCATE = SITE "P6" LEVEL 1;
+COMP "out1<7>" LOCATE = SITE "P5" LEVEL 1;
+COMP "pin1y" LOCATE = SITE "P44" LEVEL 1;
+COMP "pin2x" LOCATE = SITE "P40" LEVEL 1;
+COMP "pin2y" LOCATE = SITE "P43" LEVEL 1;
+COMP "pulses" LOCATE = SITE "P27" LEVEL 1;
+COMP "E_STOP" LOCATE = SITE "P10" LEVEL 1;
+COMP "dead_end" LOCATE = SITE "P81" LEVEL 1;
+COMP "pin1" LOCATE = SITE "P32" LEVEL 1;
+COMP "pin2" LOCATE = SITE "P35" LEVEL 1;
+COMP "pb_gpiox" LOCATE = SITE "P144" LEVEL 1;
+COMP "pb_gpioy" LOCATE = SITE "P143" LEVEL 1;
+COMP "pb_gpioz" LOCATE = SITE "P141" LEVEL 1;
+COMP "i_SPI_CS_n" LOCATE = SITE "P23" LEVEL 1;
+COMP "i_SPI_MOSI" LOCATE = SITE "P22" LEVEL 1;
+COMP "puls_in" LOCATE = SITE "P1" LEVEL 1;
+COMP "i_SPI_Clk" LOCATE = SITE "P24" LEVEL 1;
+COMP "pulses_x" LOCATE = SITE "P34" LEVEL 1;
+COMP "pulses_y" LOCATE = SITE "P33" LEVEL 1;
+SCHEMATIC END;
+

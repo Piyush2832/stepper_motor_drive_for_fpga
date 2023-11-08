@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\PIyuSH\4 - axis drive\spi_using_3_axis_test\SPI_Slave.ncd
+OUTFILE=D:\PIyuSH\4 - axis drive\spi_using_3_axis_test\SPI_Slave.bit
+FAMILY=Spartan6
+PART=xc6slx9-2tqg144
+WORKINGDIR=D:\PIyuSH\4 - axis drive\spi_using_3_axis_test
+LICENSE=WebPack
+USER_INFO=212650071_0_0_132
